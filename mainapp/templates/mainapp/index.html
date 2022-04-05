@@ -1,0 +1,446 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Shaping lives and careers through education.">
+    <meta name="keywords" content="NOVA Education, Образование за рубежом, нова эдукейшн, nova, education, grants, гранты на образование за рубежом">
+    <meta name="Author" content="Dauren Bekuzakov">
+    <meta name="Copyright" content="Dauren Bekuzakov">
+    <meta name="Address" content="Nur-Sultan, Kenesary str. 69, office 17">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>NOVA Education</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar__body">
+					<div class="navbar__logo">
+						<a href="/" class="whiteLogo"><img src="{% static 'mainapp/img/NOVAEDU_new logo white (1).png' %}" alt=""></a>
+						<a href="/" class="blueLogo"><img src="{% static 'mainapp/img/nova logo footer.png' %}" alt=""></a>
+					</div>
+					<ul class="navbar__menu">
+						<li {% if request.resolver_match.url_name == 'news' %}class="activeLink"{% endif %}><a class="navbar__link" href="{% url 'news' %}">Новости</a></li>
+						<li {% if request.resolver_match.url_name == 'dashboard' %}class="activeLink"{% endif %}><a class="navbar__link" href="{% url 'dashboard' %}">Статистика</a></li>
+						<li {% if request.resolver_match.url_name == 'map' %}class="activeLink"{% endif %}><a class="navbar__link" href="{% url 'map' %}">Страны</a></li>
+						<li {% if request.resolver_match.url_name == 'team' %}class="activeLink"{% endif %}><a class="navbar__link" href="{% url 'team' %}">Команда</a></li>
+						<li {% if request.resolver_match.url_name == 'offices' %}class="activeLink"{% endif %}><a class="navbar__link" href="{% url 'offices' %}">Офисы</a></li>
+						<li {% if request.resolver_match.url_name == 'contacts' %}class="activeLink"{% endif %}><a class="navbar__link" href="{% url 'contacts' %}">Контакты</a></li>
+						<!--<form action="#" class="searchForm">
+							<input type="search" class="navbar__search">
+						</form>-->
+					</ul>
+					<div class="navbar__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="header__body">
+				<div class="header__image">
+					<img src="{% static 'mainapp/img/header img.png' %}" alt="">
+				</div>
+				<div class="header__info">
+					<h1>Формирование жизни и карьеры через <span class="header__title-unique">образование</span></h1>
+					<p>Наша главная миссия - изменить жизнь, предлагая студентам правильное образование и профориентацию. При поддержке нашей опытной команды профессиональных консультантов мы надеемся предложить студентам возможность выбрать подходящие университеты, тем самым помогая организациям найти лучшие учебные заведения, тем самым повышая уровень обучения.</p>
+					<div class="exploreBtn_body">
+						<a href="{% url 'map' %}" class="exploreBtn">Начать</a>
+					</div>
+					
+					<div class="header__links">
+						<a href="https://www.instagram.com/novaedu.kz/" target="blank"><img src="{% static 'mainapp/img/instagram.png' %}" alt=""></a>
+						<!--<a href="#!"><img src="img/twitter.png" alt=""></a> -->
+						<a href="https://www.facebook.com/novaedu.kz/" target="blank"><img src="{% static 'mainapp/img/facebook.png' %}" alt=""></a>
+						<a style="color:#205285;" href="https://www.youtube.com/channel/UCnu0WSF9IBPta6mgDlzw7eQ"><i class="fab fa-youtube" style="font-size:30px; color:#205285;"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="universities" id="universities">
+		<div class="container-full">
+			<div class="universities__body">
+				<div class="universities__title">ПРЕДЛАГАЕМЫЕ УНИВЕРСИТЕТЫ</div>
+				<div class="universities-slider swiper-container">
+					<div class="universities-slider__wrapper swiper-wrapper">
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/nuedu.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/SEG_logo.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/unist_logo.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/kimep.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/waterloo.svg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/Warsaw-University-Logo 1.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/civitas.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/sejong.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/astanamed.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/almau.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/Cesar-Ritz-Collges-logo.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/culinaryarts.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/him.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/ihtti.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/shms.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/sdu.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/vistula.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/vlinius.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/sunway.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/kbtu.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/hanyang.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/CUHK.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/narxoz.PNG' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/lazarski.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/ВШЭ.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/sechenovv.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/СПБ.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/МГТУ.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/into.jpg' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/a6087b60-ebe0-41de-b495-9bc03d5b064e 1.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/University_of_Bristol-Logo 1.png' %}" alt="">
+						</div>
+						<div class="universities-slider__slide swiper-slide">
+							<img src="{% static 'mainapp/img/e96e9a7dca0169b5d8108a15bfd2460c1521426462 1.png' %}" alt="">
+						</div>
+						
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="news">
+		<div class="container">
+			<div class="news__body">
+				<div class="news__list">
+					<div class="news__item">
+						<a href="news/news-01" target="blank">
+							<img src="img/news item img.png" alt="" >
+							<h3 class="news__item-title">Участвуй и поступай<br>за рубеж</h3>
+							<p class="news__item-text">Главный приз грант<br>на обучение</p>
+							<div class="news__item-info">
+								<p class="news__item-info-day">07 июнь | </p>
+								<p class="news__item-info-min">10 минут</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="news__image">
+					<h2>Новости & События</h2>
+					<img src="img/news img.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<hr class="blueTopFadeLine"> 
+<!--<!-- 	<section class="numbers">
+		<div class="container">
+			<div class="numbers__body">
+				<div class="numbers__item">
+					<h2>19</h2>
+					<p>Стран</p>
+				</div>
+				<div class="numbers__item">
+					<h2>40+</h2>
+					<p>Университетов</p>
+				</div>
+				<div class="numbers__item">
+					<h2>1000+</h2>
+					<p>Студентов</p >
+				</div>
+				<div class="numbers__item">
+					<h2>600+</h2>
+					<p>Образовательных </br>организации</p >
+				</div>
+			</div>
+		</div>
+	</section> 
+	<hr class="blueBottomFadeLine" > -->
+	<section class="services" id="services">
+		<div class="container">
+			<div class="services__title">
+				<h2>Наши услуги</h2>
+				<p>NOVA education - это университетский центр приема заявок, который направляет казахстанских студентов в <br> британские, корейские, чешские и т.д  </p>
+			</div>
+			<div class="services__body">
+				<div class="services__left-side">
+					<div class="services__item blueShadow">
+						<h3>Бесплатная консультация</h3>
+						<p>Наши консультанты здесь для вас <br>чтобы предоставить бесплатную консультацию в  <br>соответствии с вашими заслугами и результатами.</p>
+						<!-- <a href="#">Learn more <i class="fas fa-long-arrow-alt-right"></i></a> -->
+						<img src="{% static 'mainapp/img/consultation.png' %}" alt="" height="60">
+					</div>
+					<div class="services__item greenShadow">
+						<h3>Организации поездок</h3>
+						<p>Мы предоставляем услуги по организации поездок <br> студентам, которые успешно прошли обучение.</p>
+						<!-- <a href="#">Learn more <i class="fas fa-long-arrow-alt-right"></i></a> -->
+						<img src="{% static 'mainapp/img/travel arrangement.png' %}" alt="" height="60">
+					</div>
+				</div>
+				<div class="services__right-side">
+					<div class="services__item orangeShadow">
+						<h3>Поступление в университет</h3>
+						<p>Мы поможем вам в поступлении <br> в выбранное учебное заведение в выбранной стране.</p>
+						<!-- <a href="#">Learn more <i class="fas fa-long-arrow-alt-right"></i></a> -->
+						<img src="{% static 'mainapp/img/university admission.png' %}" alt="" height="60">
+					</div>
+					<div class="services__item purpleShadow" >
+						<h3>Оформление виз</h3>
+						<p>Наши специалисты очень сердечно <br> и внимательно работают над оформлением заявки на визу и документации.</p>
+						<!-- <a href="#">Learn more <i class="fas fa-long-arrow-alt-right"></i></a> -->
+						<img src="{% static 'mainapp/img/visa application.png' %}" alt="" height="60" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="countries" id="countries">
+		<div class="container">
+			<div class="countries__title">
+				<h2>Страны, в которых мы работали</h2>
+			</div>
+			<div class="countries__body">
+				<div class="countries__item">
+					<img src="img/switzerland.png" alt="">
+					<h3>Швейцария</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliqua</p>
+				</div>
+				<div class="countries__item">
+					<img src="img/germany.png" alt="">
+					<h3>Германия</h3>
+					<hr>
+				    <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliqua</p>
+				</div>
+				<div class="countries__item">
+					<img src="img/uk.png" alt="">
+					<h3>Великобритания</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliqua</p>
+				</div>
+				<div class="countries__item">
+					<img src="img/hk.png" alt="">
+					<h3>Гонк Конг</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliqua</p>
+				</div>
+				<div class="countries__item">
+					<img src="img/sk.png" alt="">
+					<h3>Южная Корея</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliqua</p>
+				</div>
+				<div class="countries__item">
+					<img src="img/canada.png" alt="">
+					<h3>Канада</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliqua</p>
+				</div>
+			</div>
+			<div class="countries__button">
+				<a href="map" target="blank">Полный список</a>
+			</div>
+		</div>
+	</section> 
+	<hr class="blueTopFadeLine"> -->
+	<!-- <section class="team">
+		<div class="container">
+			<div class="team__title">
+				<h2>Our Team</h2>
+			</div>
+			<div class="team__body">
+				<div class="team-slider swiper-container">
+					<div class="team-slider__wrapper swiper-wrapper">
+						<div class="team-slider__slide swiper-slide">
+							<div class="team__item">
+								<img src="img/Davon.png" alt="">
+								<h3>Davon Lane</h3>
+								<p>director</p>
+							</div>
+						</div>
+						<div class="team-slider__slide swiper-slide">
+							<div class="team__item">
+								<img src="img/Jane.png" alt="">
+								<h3>Jane Austin</h3>
+								<p>finance director</p>
+							</div>
+						</div>
+						<div class="team-slider__slide swiper-slide">
+							<div class="team__item">
+								<img src="img/Fran.png" alt="">
+								<h3>Fran Kirby</h3>
+								<p>it director</p>
+							</div>
+						</div>
+						<div class="team-slider__slide swiper-slide">
+							<div class="team__item">
+								<img src="img/Harry.png" alt="">
+								<h3>Harry Rednapp</h3>
+								<p>smm</p>
+							</div>
+						</div>
+						<div class="team-slider__slide swiper-slide">
+							<div class="team__item">
+								<img src="img/Fran.png" alt="">
+								<h3>Davon Lane</h3>
+								<p>director</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next" ></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination" id="request"></div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<hr class="blueBottomFadeLine" > -->
+	<section class="request">
+		<div class="container">
+			<div class="request__title">
+				<h2>Обратный звонок</h2>
+				<p>Хотите поговорить с одним из консультантов по телефону? Просто отправьте свои <br> данные, и мы свяжемся с вами в ближайшее время. Вы также можете написать нам по электронной почте, если хотите</p>
+			</div>
+			<div class="request__body">
+				<form action="#!" method="post">
+						<input type="hidden" name="project_name" value="Nova Education">
+						<input type="hidden" name="admin_email" value="info@novaedu.kz">
+						<input type="hidden" name="form_subject" value="Данные из формы">
+					<div class="left-side_form">
+						<input type="text" name="name" placeholder="Имя-Фамилия" class="request-username" required="">
+						<input type="number" name="phone" placeholder="Номер телефона" class="request-phone" required="">
+						<button type="submit" class="request-btn">Отправить <i class="fas fa-chevron-right"></i></button>
+					</div>
+				</form>
+			  <div class="modalDone-content" style="display:none;">
+				<p>Ваша заявка принята!</p>
+			  </div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body">
+				<div class="footer__logo"><a href="{% url 'home' %}"><img src="{% static 'mainapp/img/nova logo footer.png' %}" alt=""></a></div>
+				<div class="footer__menu">
+					<div class="footer__menu-1">
+						<a href="{% url 'home' %}#universities">Университеты</a>
+						<a href="{% url 'map' %}">Страны</a>
+						<a href="{% url 'home' %}#services">Наши услуги</a>
+						<a href="{% url 'contacts' %}">Контакты</a>
+					</div>
+					<!-- <div class="footer__menu-2">
+						<a href="#">Disclaimer</a>
+						<a href="#">Privacy Polisy</a>
+						<a href="#">Terms of <br>Service</a>
+					</div> -->
+					<div class="footer__menu-3">
+						<a href="{% url 'offices' %}">Офисы <i class="fas fa-chevron-right"></i></a>
+						<p><i class="far fa-copyright"></i> NOVA education Ltd. <br>Все права защищены.</p>
+					</div>
+				</div>
+				<div class="footer__links">
+					<a href="https://www.instagram.com/novaedu.kz/" target="blank"><img src="{% static 'mainapp/img/instagram.png' %}" alt=""></a>
+					<!--<a href="#!"><img src="img/twitter.png" alt=""></a> -->
+					<a href="https://www.facebook.com/novaedu.kz/" target="blank"><img src="{% static 'mainapp/img/facebook.png' %}" alt=""></a>
+					<a style="color:#205285;" href="https://www.youtube.com/channel/UCnu0WSF9IBPta6mgDlzw7eQ"><i class="fab fa-youtube" style="font-size:30px; color:#205285;"></i></a>
+				
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="{% static 'mainapp/js/white-logo-for-index-page.js' %}"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+<!-- Meta Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1095690604321136');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1095690604321136&ev=PageView&noscript=1"
+		/></noscript>
+	<!-- End Meta Pixel Code -->
+</body>
+</html>

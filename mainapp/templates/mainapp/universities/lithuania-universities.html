@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2><img src="img/unitedkingdome-.png" alt="">Литва</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Vytautas_Magnus_University_logo.svg/1200px-Vytautas_Magnus_University_logo.svg.png" alt="">
+						<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/VGTU_seal.svg/1200px-VGTU_seal.svg.png" alt="">
+						<img height=100px; src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Mykolas_Romeris_University_logo.svg/1200px-Mykolas_Romeris_University_logo.svg.png" alt="">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/KTU_logo_LT.jpg" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>• Оптимальные цены на обучение</p>
+						<p>• Мечта любого студента технической направленности </p>
+						<p>• Дешевое проживание</p>
+						<p>• Возможность найти временную работу на весь период учебы</p>
+						<p>• Шанс получать ежемесячную стипендию</p>
+						<p>• Возможность получать образование в Литве <br> на английском и литовском языке</p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<h2 class="university-name">Vytautas Magnus University</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Каунас</p>
+							<p><span>Основан:</span> 1922</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Бакалавриат:</span>от 2000 EUR /год</p>
+							<p><span>Магистратура:</span>от 3000 EUR /год</p>
+							<p><span>Стоимость проживания в месяц: </span>  200 -250 EUR</p>
+							<p><span>Стоимость питания в месяц: </span>   100– 150 EUR</p>
+							<p><span>Возможность выиграть грант на обучение:</span>за полных 4 года</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Университет Витовта Великого или Vytautas Magnus University (VDU) —  <br>   государственное высшее учебное заведение в Литве.VDU начал свою деятельность в 1922 году. <br>  Главный корпус учебного заведения расположен в Каунасе на территории кампуса городского типа.</p>
+							<p>Vytautas Magnus University - одно из топовых учебных заведений, которое, <br>    согласно различным рейтингам, не покидает ТОП 5 в Литве</p>
+							<p>Университет Витовта Великого - средний по количеству студентов вуз,  <br>  в котором получают образование не более 8 тыс. студентов.</p>
+							<p>Модель учебы здесь такая, что студенты могут самостоятельно формировать свой график, <br>  менять специализацию на магистратуре и путешествовать по миру в ходе множес тва программ обмена.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Music Production</p>
+							<p>Biology and Genetics</p>
+							<p>Biotechnology</p>
+							<p>Double Degree Programme</p>
+							<p>Economics and Finance</p>
+							<p>Environmental Science </p>
+							<p>Food Quality and Safety</p>
+							<p>English Philology</p>
+							<p>International Politics and Development studies</p>
+							<p>World Politics and Economy</p>
+							<p>Water and Land Engineering</p>
+							<p>Performing Arts: Music</p>
+							<p>Transport and Logistics Engineering</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат, Апостиль </p>
+							<p>TOEFL 69 + iBT, </p>
+							<p>IELTS 5.5</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное  письмо -2 </p>
+							<p>Регистрационный сбор  100 евро</p>
+							<p>Сертификаты и достижении, грамоты</p>
+							<p>Ент от 140 баллов 100 баллов</p>
+							<p>Онлайн Интервью </p>
+							<p>Регистрационный сбор 100 EUR </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px; width:150px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Vytautas_Magnus_University_logo.svg/1200px-Vytautas_Magnus_University_logo.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://smapse.ru/storage/2019/01/k2-jpg-nggid042571-ngg0dyn-0x0x90-00f0w010c010r110f110r010t010.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<h2 class="university-name">Vilnius Gediminas Technical University</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Vilnius</p>
+							<p><span>Основан:</span> 1956</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Бакалавриат</span>от 3 500 EUR /год</p>
+							<p><span>Магистратура</span>от 3 500 EUR /год</p>
+							<p><span>Стоимость проживания в мес:</span> 200 -250 EUR</p>
+							<p><span>Стоимость питания в мес:</span> 100– 150 EUR</p>
+							<p><span>Возможность выиграть грант на обучение: за полных 4 года</span></p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Vilnius Gediminas Technical University - одно из топовых учебных заведений, 
+    которое, согласно различным рейтингам, не покидает ТОП 5 в Литве.</p>
+							<p>Вильнюсский технический университет Гедимина регулярно занимает топовые позиции, 
+    входя в топ 5% лучших в академических рейтингах всего мира.</p>
+							<p>Университет активно принимает участие в международных программах по обмену
+    студентами и преподавателями с другими учебными заведениями.</p>
+							<p>Университет имеет в распоряжении собственную библиотеку. Учебное заведение даёт 
+    возможность студентам проживать на территории кампуса.</p>
+							<p>ВГТУ является лучшим университетом Литвы в предметных областях Архитектура / Искусственная среда.</p>
+							<p>Умышленно небольшой охват специализаций</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Требования:</h3>
+							<p>Аттестат, Апостиль </p>
+							<p>TOEFL 75 iBT, </p>
+							<p>IELTS 5.5</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное  письмо -2 </p>
+							<p>Регистрационный сбор  100 евро</p>
+							<p>Сертификаты и достижении, грамоты</p>
+							<p>Ент от 140 баллов 100 баллов</p>
+							<p>Онлайн Интервью</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Программы обучения:</h3>
+							<p>Automotive Engineering</p>
+							<p>Bioengineering</p>
+							<p>Building Energy</p>
+							<p>Business Management</p>
+							<p>Civil Engineering</p>
+							<p>Computer Engineering</p>
+							<p>Creative Industries</p>
+							<p>Landscape Architecture</p>
+							<p>Mechanical Engineering</p>
+							<p>Digital Manufacturing</p>
+							<p>Economics Engineering</p>
+							<p>Environmental Protection Engineering</p>
+							<p>Finance Engineering</p>
+							<p>Information and Communication Technologies</p>
+							<p>Information Systems Engineering</p>
+							<p>Information Technologies</p>
+							<p>Mechatronics and Robotics</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="width:90px; height:90px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/VGTU_seal.svg/1200px-VGTU_seal.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://www.ecam.fr/en/wp-content/uploads/sites/3/2018/04/IMG_20180327_162110.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-03">
+		<div class="container">
+			<h2 class="university-name">Mykolas Romeris University</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Вильнюс и Каунас</p>
+							<p><span>Основан:</span> 1990</p>
+							<p><span>Язык:</span>  английский и литовский</p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Стоимость обучения:</span>Бакалавриат от 2 160 EUR /год <br> Магистратура от 3 120 EUR /год<br></p>
+							<p><span>Стоимость проживания в месяц:</span>70 -200 EUR (общежитие)<br></p>
+							<p><span>Стоимость питания в месяц:</span>  100– 150 EUR<br></p>
+							<p><span>Возможность выиграть грант на обучение: за полных 4года, за первый год, есть гранты от сената, также есть возможность оучиться бесплатно первый год</span></p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Университет Миколаса Ромериса (MRU) - международный университет, расположенный в
+    Вильнюсе и Каунасе. Ведущий университет в области социальных наук и междисциплинарных
+    исследований в Литве.</p>
+							<p>Университет предлагает множество различных стипендий для иностранных студентов.</p>
+							<p>В настоящее время в МРУ обучается 7500 студентов, в том числе 600 иностранных
+    студентов, и работает более 400 профессорско-преподавательского состава.</p>
+							<p>По последним данным Rotten WiFi качество Wi-Fi ставит MRU на второе место среди
+    университетов мира.</p>
+							<p>Согласно рейтингу QS World University Rankings (EECA) 2019 года, Университет Миколаса
+    Ромериса поднялся на 30 мест по сравнению с прошлым годом и сейчас находится на почетном
+148-м месте.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Communication and Digital marketing</p>
+							<p>English for specific purposes and the
+    second foreign language</p>
+							<p>English for specific purposes and</p>
+							<p>Korean studies</p>
+							<p>Financial industry</p>
+							<p>Global Business and Modern Marketing</p>
+							<p>Social work and human rights</p>
+							<p>Tourism management and a heritage</p>
+							<p>Informatics and Digital contents</p>
+							<p>Multicultural communication and new media</p>
+							<p>Psychology</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат, Апостиль</p>
+							<p>TOEFL 53-64 + iBT,</p>
+							<p>IELTS 4.5-5</p>
+							<p>Фото в стиле «удостоверения»</p>
+							<p>Копия удостоверения</p>
+							<p>Регистрационный сбор 100 EUR <br>
+							<p>Отличные академические результаты </p>
+							<p>Фото в стиле «удостоверения»</p>
+							<p>Знание английского языка (не менее уровня B2)</p>
+							<p>1 рекомендательное письмо от преподавателя</p>
+							<p>Заявление Центра международных программ или 
+     Фонда развития "Болашак" о том, что кандидат
+     предварительно отобран для получения стипендии.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Mykolas_Romeris_University_logo.svg/1200px-Mykolas_Romeris_University_logo.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://www.govilnius.lt/images/5f55e042e2bcc07a3b67648d?w=750&h=500&fit=contain" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-04">
+		<div class="container">
+			<h2 class="university-name">Kaunas University of Technology</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Каунас</p>
+							<p><span>Основан:</span> 1922</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Бакалавриат</span>  от 2900 EUR /год</p>
+							<p><span>Магистратура</span>  от 3800 EUR /год</p>
+							<p><span>Стоимость проживания в мес:</span> 200 -250 EUR</p>
+							<p><span>Стоимость питания в мес:   </span> 100– 150 EUR</p>
+							<p><span>Возможность выиграть грант на обучение:</span>полное покрытие обучение 4 года </p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Kaunas University of Technology располагается на второй позиции в топе университетов Литвы. </p>
+							<p>Каунасский технологический университет регулярно занимает топовые позиции,  
+    входя в топ 5% лучших в академических рейтингах всего мира.</p>
+							<p>Университет имеет в распоряжении собственную библиотеку.</p>
+							<p>Учебное заведение даёт возможность студентам проживать на территории кампуса.</p>
+							<p>На официальном сайте (http://ktu.edu) университета вы можете получить более точную 
+     информацию о стоимости обучения в зависимости от факультета.</p>
+							<p>Каунасский технологический университет - средний по количеству студентов вуз, 
+    в котором получают образование не более 10 тыс. студентов.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Material Physics and Nano technologies</p>
+							<p>Architecture</p>
+							<p>Aviation Engineering</p>
+							<p>Business and Entrepreneurship</p>
+							<p>Chemical Technology and Engineering</p>
+							<p>Civil Engineering</p>
+							<p>Communication Studies and Information 
+      Management Technologies</p>
+							<p>Electronics and Electrical Engineering</p>
+							<p>Mechanical Engineering</p>
+							<p>Intelligent Robotics Systems</p>
+							<p>Mechatronics</p>
+							<p>New Media Language</p>
+							<p>Politics and Security Studies</p>
+							<p>Public Governance</p>
+							<p>Renewable Energy Engineering</p>
+							<p>Vehicle Engineering</p>
+							<p>Environmental Engineering and Technology</p>
+							<p>Informatics</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат, Апостиль </p>
+							<p>TOEFL 75 iBT, </p>
+							<p>IELTS 5.5</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное  письмо -2 </p>
+							<p>Регистрационный сбор  100 евро</p>
+							<p>Сертификаты и достижении, грамоты</p>
+							<p>Ент от 140 баллов 100 баллов</p>
+							<p>Онлайн Интервью </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/KTU_logo_LT.jpg" alt="">
+					<img src="https://en.ktu.edu/wp-content/uploads/sites/5/2017/04/KTU-17.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

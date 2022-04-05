@@ -1,0 +1,556 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2><img src="img/unitedkingdome-.png" alt="">Гонконг</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="https://wun.ac.uk/wp-content/uploads/logo-hongkong.png" alt="">
+						<img src="https://www.polyu.edu.hk/assets/img/main-logo-3x.png" alt="">
+						<img height=100px; src="https://yt3.ggpht.com/ytc/AKedOLQeqeR50tAwEQCrUTMSU6Kik4gs1FtNyLMNJvlpVQ=s900-c-k-c0x00ffffff-no-rj" alt="">
+						<img src="https://www.purestorage.com/content/dam/purestorage/logos/HKUST_Logo.png.imgo.png" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>• Рейтинг престижности</p>
+						<p>• Безопасность</p>
+						<p>• Качественное бесплатное образование </p>
+						<p>• Стажировка в мировых крупных компаниях </p>
+						<p>• Дальнейшее трудоустройство за рубежом </p>
+						<p>• Виза на год без нужды в спонсорстве </p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<h2 class="university-name">The Chinese University of Hong Kong</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1963</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> 19861</p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Бакалавриат:</span> 18 700 USD/год</p>
+							<p><span>Стоимость проживания:</span> 4 500 USD/год</p>
+							<p><span>Стипендии:<br></span>· Admission scholarship ~650 -18 700 USD/год (обучение)<br> ~5 800 USD/год (проживание) <br> · HKSAR Government scholarship  ~10 300 USD/год <br> · Стипендия «Один пояс, один путь»  ~18 700 USD/год (обучение)</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Язык:</span> английский</p>
+							
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>ТОП 50 лучших ВУЗов мира согласно QS World rankings 2021 (#43)</p>
+							<p>Возможности стажировок во всем мире (600+)</p>
+							<p>Программы обмена с зарубежными ВУЗами (280+ партнеров в 35+ странах)</p>
+							<p>Интернациональный состав студентов (50+ стран)</p>
+							<p>Самый большой и зелёный кампус в Гонконге</p>
+							<p>Престижный преподавательский и исследовательский персонал, единственный университет ГК получивший Нобелевскую премию, премию Тьюринга, медаль Филдса и премию Веблена</p>
+							<p>Программы двойного диплома (City, University of London, Tsinghua University, IE Business School etc.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Искусство</p>
+							<p>Бизнес администрирование</p>
+							<p>Педагогика</p>
+							<p>Инженерия</p>
+							<p>Юриспруденция</p>
+							<p>Медицина</p>
+							<p>Наука</p>
+							<p>Социальные науки</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат и приложение</p>
+							<p>Результаты ЕНТ</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Онлайн-форма заявки</p>
+							<p>SAT Reasoning min 1190,  <br> SAT Subject (при наличии)</p>
+							<p>TOEFL iBT80 или IELTS6.0</p>
+							<p>Сертификаты, грамоты, дипломы <br> достижений (при наличии)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px; width:130px;" src="https://wun.ac.uk/wp-content/uploads/logo-hongkong.png" alt="">
+					<img style="object-fit:cover;" src="https://studyinchinas.com/wp-content/uploads/2019/07/cuhk1-e1562421295383.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<h2 class="university-name">The Hong Kong Polytechnic University</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1994</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> 21 553</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Бакалавриат</span>18 000 USD/год</p>
+							<p><span>Магистратура</span>15 315 USD/год</p>
+							<p><span>Общежитие</span>1 700 USD/год</p>
+							<p><span>Расходы на проживание</span>6 500 USD/год</p>
+							<p><span>Стипендии:</span>ТОП стипендия – покрывает обучение, <br> общежитие и расходы а проживание ~ 24 400 USD <br> Стипендия, с покрытием стоимости обучения ~ 18 000 USD <br>Стипендия, с покрытием половины стоимости обучения ~ 9 000 USD </p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>ТОП 100 лучших ВУЗов мира согласно QS World rankings 2021 (#75)</p>
+							<p>ТОП 100 лучших политехнических университетов мира</p>
+							<p>Гарантированные возможности стажировок</p>
+							<p>Программы обмена с зарубежными ВУЗами (456 партнеров в 47 странах)</p>
+							<p>Первый ВУЗ в Гонконге, которое включило обязательный компонент Работа-Интегрированного</p>
+							<p>Образование (WIE) в учебную программу бакалавриата (обучение на рабочем месте)</p>
+							<p>Летняя программа Оксбридж (учеба в Оксфорд или Кэмбридж университете)</p>
+							<p> Спонсорская летняя исследовательская программа за рубежом (Carnegie Mellon, Purdue, MIT etc.)</p>
+							<p>Тесное сотрудничество с авиакомпанией Boeing;</p>
+							<p>Активное участие в международных программах и научных исследованиях</p>
+							<p>Расположение кампуса в центре города</p>
+							<p>Воспитание Талантов (выпустил более 500 предпринимателей и стартапов)</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Прикладная наука и текстиль</p>
+							<p>Строительство и окружающая среда</p>
+							<p>Бизнес</p>
+							<p>Инженерия</p>
+							<p>Здравоохранение и общественные науки</p>
+							<p>Гуманитария</p>
+							<p>Школа Дизайна</p>
+							<p>Школа Отельного и Туристического Менеджмента</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат с приложением</p>
+							<p>Результаты ЕНТ</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>IELTS 6.0/TOEFL 80</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Регистрационный сбор (60- доллар)</p>
+							<p>CV</p>
+							<p>Онлайн-форма заявки</p>
+							<p>SAT Reasoning min 1290 ( для гранта 1380<), <br>   SAT Subject (при наличии) (650< для гранта) </p>
+							<p> Сертификаты, грамоты, <br> дипломы достижений (при наличии)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="width:170px;" src="https://www.polyu.edu.hk/assets/img/main-logo-3x.png" alt="">
+					<img style="object-fit:cover;" src="https://keystoneacademic-res.cloudinary.com/image/upload/element/15/153932_Campus0117_resize.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-03">
+		<div class="container">
+			<h2 class="university-name">The University of Hong Kong</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1911</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> 20491</p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Стоимость обучения:</span>Бакалавриат ~22 000 USD/год <br> Общежитие ~2 000-4 000 USD/год <br> Расходы на проживание ~6 000 USD/год</p>
+							<p><span>Стипендии:</span>Entrance scholarships –<br> от частичного до полного покрытия расходов <br> на обучение, общежитие и расходы на проживание</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>#1 университет Гонконга.</p>
+							<p>ТОП 50 лучших ВУЗов мира согласно QS World rankings 2021 (#22)</p>
+							<p>ТОП 10 лучших ВУЗов Азии согласно QS World rankings 2021 (#4)</p>
+							<p>Самый международный университет в мире (Times Higher Education 2019)</p>
+							<p>Почти 100% уровень трудоустройства выпускников</p>
+							<p>Программы двойного диплома с зарубежными ВУЗами (University of California, Berkeley, <br>University College London, Peking University etc.)</p>
+							<p>Программы обмена с зарубежными ВУЗами (365+ партнеров в 44 странах)</p>
+							<p>Возможности стажировок по всему миру</p>
+							<p>Сотрудничество с самыми престижными университетами мира (Harvard, Yale, Princeton, MIT, Oxford etc.)</p>
+							<p>Международный академический состав мирового класса</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Архитектура</p>
+							<p>Искусства</p>
+							<p>Бизнес и экономика</p>
+							<p>Cтоматология</p>
+							<p>Педагогика</p>
+							<p>Инженерия</p>
+							<p>Права</p>
+							<p>Медицина</p>
+							<p>Естественные науки</p>
+							<p>Гуманитарные науки</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат с приложением</p>
+							<p>Результаты ЕНТ</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>IELTS 6.5/TOEFL 93</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Онлайн-форма заявки</p>
+							<p>Регистрационный взнос (~ $60)</p>
+							<p>SAT Reasoning min 1350, <br> SAT Subject 550-600 (при наличии) </p>
+							<p>Сертификаты, грамоты, <br> дипломы достижений (при наличии) </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:90px;" src="https://yt3.ggpht.com/ytc/AKedOLQeqeR50tAwEQCrUTMSU6Kik4gs1FtNyLMNJvlpVQ=s900-c-k-c0x00ffffff-no-rj" alt="">
+					<img style="object-fit:cover;" src="https://images1.content-hci.com/commimg/myhotcourses/institution/CH/myhc_302151.jpg" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-04">
+		<div class="container">
+			<h2 class="university-name">The Hong Kong University of Science and Technology</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1991</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> 15000<p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Бакалавриат</span> ~18 000 USD/год</p>
+							<p><span>Общежитие</span> ~1 730-3 050 USD/год</p>
+							<p><span>Расходы на проживание</span> 5 100 USD/год</p>
+							<p><span>Стипендии:</span> Admission scholarship – от частичного покрытия 
+ до полного покрытия стоимости обучения и 7000 USD/год на проживание <br> Стипендия для обладателей золотых медалей <br> Международной – покрытие обучения и  7000 USD/год на проживание <br> Азиатской олимпиады – покрытие обучения и 7000 USD/год на проживание и 3500 USD/год</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>ТОП 50 лучших ВУЗов мира согласно QS World rankings 2021 (#27) ТОП 10 лучших ВУЗов Азии согласно</p>
+							<p>QS World rankings 2021 (#8)Высокий уровень трудоустройства выпускников согласно Global University</p>
+							<p>Employability Ranking 2019 (#10)</p>
+							<p>Программы обмена с зарубежными ВУЗами (240+ партнеров в 37 странах)</p>
+							<p>Возможности стажировок в организациях по всему миру</p>
+							<p>Междисциплинарные программы, позволяющие объединить разные дисциплины в одну новую программу</p>
+							<p>Центр Предпринимательства (финансирование, обучение, соревнования, консультации, наставничество</p>
+							<p>и услуги поддержки стартапов для студентов)</p>
+							<p> Университет Науки и Технологии тесно сотрудничает с ведущими мировыми вузами США, Австралии, <br> Великобритании, Японии</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Наука</p>
+							<p>Инженерия</p>
+							<p>Бизнес и менеджмент</p>
+							<p>Гуманитарные и социальные науки</p>
+							<p>Офис междисциплинарных программ</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Онлайн-форма заявки</p>
+							<p>Аттестат и приложение</p>
+							<p>Результаты ЕНТ</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>TOEFL iBT80/IELTS 6.0</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Резюме</p>
+							<p>SAT Reasoning Test min 1290, <br> 
+  SAT Subject Test min600 (при наличии)</p>
+							<p> Сертификаты, грамоты,  <br>
+  дипломы достижений (при наличии)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="https://www.purestorage.com/content/dam/purestorage/logos/HKUST_Logo.png.imgo.png" alt="">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HKUST_campus_view_looking_from_above.jpg/1200px-HKUST_campus_view_looking_from_above.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-05">
+		<div class="container">
+			<h2 class="university-name">City University of Hong Kong</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1944</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> >20 000</p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Стоимость обучения:</span>Бакалавриат ~18 000 USD/год <br> Общежитие 2 000 USD/год <br> Расходы на проживание 4 600 USD/год</p>
+							<p><span>Стипендии:<br></span>• ТОП стипендия – покрывает обучение, общежитие и <br> расходы а проживание ~ 23 000 USD</p>
+							<p>• Стипендия, с покрытием стоимости обучения ~ 18 000 USD</p>
+							<p>• Стипендия, с покрытием половины стоимости обучения ~ 9 000 USD</p>
+							<p>• Стипендия для выдающихся спортсменов ~ 20 500 USD</p>
+							<p>• Diversity grant ~3 850 USD</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>ТОП 50 лучших ВУЗов мира согласно QS World rankings 2021 (#48)</p>
+							<p>Академический персонал мирового уровня</p>
+							<p>Активное участие в международных исследовательских разработках</p>
+							<p>Возможности стажировок (40+ стран)</p>
+							<p>Программы обмена с зарубежными ВУЗами (400+ партнеров)</p>
+							<p>Программы двойного диплома (Columbia University, National Taiwan University, Leuphana University etc.)</p>
+							<p>Интернациональный состав студентов (80+ стран)</p>
+							<p>Расположение кампуса в центре города</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Колледж гуманитарных и социальных наук</p>
+							<p>Колледж инженерии</p>
+							<p>Колледж наук</p>
+							<p>Колледж ветеринарной медицины и естественных наук</p>
+							<p>Колледж бизнеса</p>
+							<p>Школа креативных медиа</p>
+							<p>Школа науки о данных</p>
+							<p>Юридическая школа</p>
+							<p>Школа энергетики и окружающей среды</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат с приложением</p>
+							<p>Результаты ЕНТ</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>IELTS 6.5/TOEFL 79</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Онлайн-форма заявки</p>
+							<p>Регистрационный взнос (~ $60)</p>
+							<p>Творческое портфолио для <br>  заявителей в школу креативных медиа </p>
+							<p>SAT Reasoning min 1190, <br>   SAT Subject (при наличии)</p>
+							<p>Сертификаты, грамоты, <br>   дипломы достижений (при наличии)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/CityU_logo.svg/1200px-CityU_logo.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/C01-086.jpg" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+		<section class="info-06">
+		<div class="container">
+			<h2 class="university-name">Lingnan University</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1988</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Бакалавриат</span> ~18 000 USD/год</p>
+							<p><span>Общежитие</span> ~1 200-1 600 USD/год</p>
+							<p><span>Расходы на проживание</span> 4 600 USD/год</p>
+							<p><span>Стипендии:</span> • Полная стипендия – покрывает обучение, общежитие и <br>
+     частичные расходы на проживание 22 000 USD/год<br>• Стипендия, с покрытием половины стоимости обучения <br> и расходы на проживание 11 000 USD<br> • Стипендия, с покрытием стоимости обучения ~ 18 000 USD<br> • Стипендия, с покрытием половины стоимости обучения ~ 9 000 USD</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Единственный университет либеральных искусств в Гонконге</p>
+							<p>ТОП 10 лучших колледжей либеральных искусств Азии (Forbes 2015)</p>
+							<p>ТОП 100 лучших университетов Азии согласно QS World rankings 2018</p>
+							<p>Программы обмена с зарубежными ВУЗами (230+ партнеров в 45+ странах)</p>
+							<p>Возможности международных стажировок</p>
+							<p>Первый университет Гонконга, достигший цели обеспечения бесплатного 4-х летнего полного покрытия расходов для всех студентов</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Искусств</p>
+							<p>Социальных наук</p>
+							<p>Бизнеса</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат с приложением</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>IELTS 6.0/TOEFL 79</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Онлайн-форма заявки</p>
+							<p>Регистрационный взнос (~ $60)</p>
+							<p>SAT Reasoning min 1290,<br>   SAT Subject (при наличии)</p>
+							<p>Сертификаты, грамоты,  <br> 
+  дипломы достижений (при наличии)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:100px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/LingnanUniversity_logo.svg/1200px-LingnanUniversity_logo.svg.png" alt="">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Lingnan_University_Campus_Overview_201410.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+		<section class="info-07">
+		<div class="container">
+			<h2 class="university-name">Hong Kong Baptist University</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1956</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> >11 000</p>
+							<p><span>Программы:</span> бакалавриат</p>
+							<p><span>Стоимость обучения:</span>Бакалавриат ~18 000 USD/год <br> Общежитие 1 400-1 950 USD/год <br> Расходы на проживание ~5 000 USD/год</p>
+							<p><span>Стипендии:<br></span>• ТОП стипендия – покрывает обучение, общежитие и <br> расходы на проживание ~ 24 400 USD</p>
+							<p>• Стипендия, с покрытием стоимости обучения ~ 18 000 USD</p>
+							<p>• Стипендия, с покрытием половины стоимости обучения и общежития ~ 12 200 USD</p>
+							<p>• Разовые стипендии – размер устанавливается самим факультетом</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Высокие рейтинговые показатели в мировом сообществе</p>
+							<p>Участие студентов в международных программах</p>
+							<p>Активное участие в программе обмена учащимися</p>
+							<p>Возможности стажировок (40+ стран)</p>
+							<p>Большой выбор специальностей</p>
+							<p>Многопрофильный университет HKBU принимает активное участие в <br>
+  международной программе обмена успешными студентами, поэтому ученики имеют <br>
+  право проходить практику в любой стране, в том числе в США и Канаде</p>
+							<p> HKBU входит в 50 лучших университетов Азии и в 300 лучших учебных заведений мира</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Искусства</p>
+							<p>Науки</p>
+							<p>Социальных наук</p>
+							<p>Школа Бизнеса</p>
+							<p>Школа коммуникаций</p>
+							<p>Школа китайской медицины</p>
+							<p>Академия визуальных искусств</p>
+							<p>Междициплинарные программы</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат и приложение</p>
+							<p>Результаты ЕНТ</p>
+							<p>TOEFL iBT79/IELTS 6.0</p>
+							<p>Онлайн-форма заявки студента</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Резюме</p>
+							<p>SAT Reasoning Test min 1190, <br>  SAT Subject Test (при наличии)</p>
+							<p> Сертификаты, грамоты, <br>  дипломы достижений (при наличии) </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:30px;" src="https://www.pngitem.com/pimgs/m/465-4651152_heading-hong-kong-baptist-university-logo-hd-png.png" alt="">
+					<img style="object-fit:cover;" src="https://studyabroad.temple.edu/sites/studyabroad/files/styles/siteslide_mobile/public/program_slides/shawcampus02.jpg?itok=tVyb6wR5&c=9a8ec0b282c44ad3eb5cabb4c79678b0" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-08">
+		<div class="container">
+			<h2 class="university-name">The Education University of Hong Kong</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Гонконг</p>
+							<p><span>Основан:</span> 1994</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span>8 267</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Бакалавриат</span> ~18 000 USD/год</p>
+							<p><span>Общежитие</span> ~1 800 USD/год</p>
+							<p><span>Расходы на проживание</span>  6 500 $ / год</p>
+							<p><span>Стипендии:</span>• Полная стипендия – покрывает обучение, общежитие и расходы проживание<br>• Стипендия, с покрытием стоимости обучения<br>• Стипендия, с покрытием половины стоимости обучения </p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>#3 в Азии и #16 в мире по педагогическому направлению согласно QS World rankings 2021</p>
+							<p>Высокий уровень трудоустройства (95% выпускников, Graduate Employment Survey 2018)</p>
+							<p>Крупнейший поставщик педагогического образования</p>
+							<p>Средняя заработная плата выпускников-учителей $3 300</p>
+							<p>Возможности стажировок</p>
+							<p>Программы обмена с зарубежными ВУЗами (200+ партнеров в 30+ странах)</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Факультет либеральных искусств и социальных наук</p>
+							<p>Факультет образования и человеческого развития</p>
+							<p>Гуманитарный Факультет</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат с приложением</p>
+							<p>Транскрипт за 9-11 кл</p>
+							<p>IELTS 6.0/TOEFL 80</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательные письма</p>
+							<p>Онлайн-форма заявки</p>
+							<p>Регистрационный взнос (~ $60)</p>
+							<p>SAT Reasoning min 1290,<br>   SAT Subject (при наличии)</p>
+							<p>Сертификаты, грамоты,  <br> 
+  дипломы достижений (при наличии)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:100px; width:200px;" src="https://www.eduhk.hk/cms/f/front_page/9/1200c630/logo.png" alt="">
+					<img src="https://storage-prtl-co.imgix.net/endor/organisations/15389/images/1545253060_Uniprofile%203.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

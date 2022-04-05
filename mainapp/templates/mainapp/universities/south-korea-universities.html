@@ -1,0 +1,382 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2><img src="img/unitedkingdome-.png" alt="">Южная Корея</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="https://uepap2.unist.ac.kr/unist_logon/layout/unist_logo_1.png" alt="">
+						<img src="https://kzstudent.kz/images/universities/korea/solbridge/logo.jpg" alt="">
+						<img height=100px; src="https://image.ajunews.com/content/image/2017/09/15/20170915015821150172.jpg" alt="">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Korea_University_logotype_%28English_version%29.svg/1280px-Korea_University_logotype_%28English_version%29.svg.png" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>• Конкурентоспособное образование, высокий уровень образования.</p>
+						<p>• Иностранные студенты могут работать неполный рабочий день во время учебы. </p>
+						<p>•  Возможность получить образование, которое котируется во всем мире.</p>
+						<p>• Благодаря жесткой конкуренции на внутреннем
+ рынке труда, все преподаватели проходят строжайший отбор, 
+и право на работу в вузах получают действительно лучшие.</p>
+						<p>• Практика и стажировка на ведущих предприятиях страны.</p>
+						<p>•  Качество международного уровня.</p>
+						<p>•  Возможность дополнительного заработка в свободное от учёбы время.</p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<h2 class="university-name">UNIST</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Ульсан</p>
+							<p><span>Основан:</span> 1992</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Предлагают только грантные основы!</span></p>
+							<p><span>Есть возможность получить грант на покрытие обучение + проживание + питание(3 разовое)</span></p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Ведущий мировой университет для развития науки и техники во имя процветания человечества</p>
+							<p>Vytautas Magnus University - одно из топовых учебных заведений, которое, <br>    согласно различным рейтингам, не покидает ТОП 5 в Литве</p>
+							<p>UNIST - это теплое и гостеприимное высшее учебное заведение, расположенное в самом сердце 
+    крупнейшего промышленного города Кореи Ульсана, Южная Корея. С момента своего открытия 
+    в 2009 году УНИСТ действительно стал одним из ведущих мировых научно - технических университетов.  UNIST стремится войти в топ-10  научно - технических университетов к 2030 году.</p>
+							<p>Экологически активный кампус UNIST поддерживает образовательную исследовательскую 
+    деятельность в области передовых технологий. Кампус UNIST находится в гармонии с природой 
+    и полон потрясающей растительной жизни, что позволяет студентам и преподавателям ощутить 
+    красоту смены времен года.</p>
+							<p>№1 Университет по 2019 Leiden Ranking.</p>
+							<p>№8 Университет по Миру по рейтингу среди университетов, в которых обучается менее 5000 студентов.</p>
+							<p>№1 Университет по Times Higher Education World University Rankings (2020 Citations).</p>
+							<p>№1 Университет по в Корее и №21 по миру по Nature Index Young Universities 2019.</p>
+							<p>UNIST hosts three institutes for basic science campus research centers 
+    (Research funding of USD 300 million for 10 years).</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Колледж инженерии</p>
+							<p>Колледж информационно-биологической 
+    конвергентной инженерии</p>
+							<p>Колледж естественных наук</p>
+							<p>Школы кафедры</p>
+							<p>Мультидисциплинарный Институт</p>
+							<p>Школа бизнес администрации </p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат</p>
+							<p>Сертификат/Достижения</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное письмо</p>
+							<p>Копия загранпаспорта (студента и родителей)</p>
+							<p>Заполненная вступительная онлайн-форма</p>
+							<p>Транскрипт оценок</p>
+							<p>Студенческое резюме</p>
+							<p>Творческое портфолио</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px; width:150px;" src="https://uepap2.unist.ac.kr/unist_logon/layout/unist_logo_1.png" alt="">
+					<img style="object-fit:cover;" src="https://sm.nis.edu.kz/wp-content/uploads/1-8-800x500.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<h2 class="university-name">Solbridge</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Daejeon</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Стоимость обучения:  </span> ~10 000 USD /год</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Полностью англоязычные учебные программы/дипломные программы.</p>
+							<p>80% международных преподавателей, имеющих дипломы престижных университетов.</p>
+							<p>Баланс между теорией и практикой через программы погружения, специальные лекции, 
+    семинары и стажировки.</p>
+							<p>Программа карьерного консультанта (CAP) предназначена для предоставления 
+     студентам академического руководства при подготовке карьерных планов.</p>
+							<p>Одна из самых молодых бизнес-школ в мире, получившая аккредитацию AACSB.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Финансы</p>
+							<p>Маркетинг</p>
+							<p>Менеджмент</p>
+							<p>Предпринимательство</p>
+							<p>Гостиницный бизнес</p>
+							<p>Технологии</p>
+							<p>Рестранный бизнес</p>
+							<p>Международные отношения</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат, апостиль </p>
+							<p>Копия загранпаспорта</p>
+							<p>Портфолио(Сертификат/Достижения)</p>
+							<p>Мотивационное письмо</p>
+							<p>Подтверждение финансов –банковская выписка, 
+     подтверждающая наличие 20 000 долларов США
+     на вашем банковском счете</p>
+							<p>Рекомендательное письмо -2</p>
+							<p>CV</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="width:140px; height:90px;" src="https://kzstudent.kz/images/universities/korea/solbridge/logo.jpg" alt="">
+					<img src="http://academconsult.ru/uploaded/solbridge.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-03">
+		<div class="container">
+			<h2 class="university-name">Sejong University</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span>Сеул</p>
+							<p><span>Основан:</span>  1978</p>
+							<p><span>Язык:</span>английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Стоимость обучения:</span> ~8 000 EUR /год</p>
+							<p><span>Есть возможность выиграть скидку на обучение начиная от 30%</span></p>
+							<p><span>Стоимость питания в месяц:</span>  100– 150 EUR<br></p>
+							<p><span>Возможность выиграть грант на обучение: за полных 4года, за первый год, есть гранты от сената, также есть возможность оучиться бесплатно первый год</span></p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Охватывает все аспекты азиатских и других развивающихся регионов, 
+    с конкурентной учебной программой.</p>
+							<p>Позволяет общаться и сотрудничать с различными коллегами и факультетами.</p>
+							<p>Сосредоточивается на инновационных передовых практиках для международных рынков 
+    бизнеса и вопросах управления.</p>
+							<p>Обеспечивает академические и управленческие перспективы путем тематических 
+     исследований, полевых исследований и практики бизнеса.</p>
+							<p>Обучение исключительно на английском языке.</p>
+							<p>Имеет привлекательную стипендию (до 50% от стоимости обучения).</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Business administration</p>
+							<p>Hospitality and Tourism Management</p>
+							<p>Computer Science and Engineering</p>
+							<p>Public Administration</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат</p>
+							<p>Копия загранпаспорта</p>
+							<p>Портфолио(Сертификат/Достижения)</p>
+							<p>Мотивационное письмо</p>
+							<p>Подтверждение финансов – банковская выписка, 
+    подтверждающая наличие 20 000 долларов США 
+								на вашем банковском счете</p>
+							<p>Рекомендательное письмо-2</p>
+							<p>CV (MBA, опыт работы не менее двух лет)</p>
+							<p>Транскрипт оценок</p>
+							<p>Регистрационный сбор 513,000 KRW</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px;" src="https://image.ajunews.com/content/image/2017/09/15/20170915015821150172.jpg" alt="">
+					<img style="object-fit:cover;" src="https://smapse.ru/storage/2019/02/sejong-university-1.jpg" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-04">
+		<div class="container">
+			<h2 class="university-name">Korea University</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Сеул</p>
+							<p><span>Основан:</span>  1905</p>
+							<p><span>Язык:</span> английский, корейский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Входит в ТОП 100 лучших вузов мира и в ТОП 20 лучших учебных заведений Азии. </p>
+							<p>Вуз является мультидисциплинарным и предлагает качественное образование в самых 
+    разных областях, включая инженерию, бизнес, искусства, гуманитарные науки, право, 
+    гостеприимство, международные отношения и много другое.</p>
+							<p>Университет Корё отличается активной международной деятельностью. Он входит в 
+    международную группу W100 Reputation Network, которая занимается исследованиями 
+    мировой экономики и маркетинга, и в ассоциацию Universities 21 (U21), членами которой 
+    также являются Эдинбургский университет, Коннектикутский университет, Университет Гонконга </p>
+							<p>Пользуется особым признанием среди работодателей за высокий уровень подготовки 
+    специалистов в прикладных специальностях.</p>
+							<p>Университет имеет обширные связи со многими университетами на международном уровне в 
+    рамках программы студенческого обмена, которая была разработана в рамках интернационализации.</p>
+							<p>Всего в состав университета входят 115 исследовательских учреждений.</p>
+							<p>Есть крупная библиотека, спортивные сооружения, лаборатории.</p>
+							<p>Университету принадлежат современные общежития – в них проживают свыше 1 000 студентов.</p>
+							<p>Действует американская система самостоятельного выбора предметов, обеспечивающая 
+    студентам возможность совершенствования в избранном направлении.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Колледж гуманитарных наук</p>
+							<p>Колледж естественных наук и биотехнологии</p>
+							<p>Колледж политических наук и экономики</p>
+							<p>Колледж естественных наук</p>
+							<p>инженерный колледж</p>
+							<p>медицинский колледж</p>
+							<p>педагогический колледж</p>
+							<p>Колледж сестринского дела</p>
+							<p>Колледж медицинских наук</p>
+							<p>Колледж информатики</p>
+							<p>Школа искусства и дизайна</p>
+							<p>Отдел международных исследований</p>
+							<p>Школа медиа и коммуникаций</p>
+							<p>Школа междисциплинарных исследований</p>
+							<p>Школа информационной безопасности</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Сертификат корейского языка Топик 2-3</p>
+							<p>Аттестат</p>
+							<p>Копия загранпаспорта</p>
+							<p>Портфолио (Сертификат/Достижения)</p>
+							<p>Мотивационное письмо</p>
+							<p>Подтверждение финансов – банковская выписка, 
+    подтверждающая наличие 20 000 долларов США 
+    на вашем банковском счете</p>
+							<p>Рекомендательное письмо</p>
+							<p>CV (MBA, опыт работы не менее двух лет) </p>
+							<p>	Транскрипт оценок</p>
+							<p>Регистрационный сбор 200,000 KRW   </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Korea_University_logotype_%28English_version%29.svg/1280px-Korea_University_logotype_%28English_version%29.svg.png" alt="">
+					<img src="https://s3.eu-north-1.amazonaws.com/images.free-apply.com/uni/gallery/lg/1041000183/324719298c7a6fcdec798417e59815f2b0203036.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-05">
+		<div class="container">
+			<h2 class="university-name">KAIST</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span>Тэджон</p>
+							<p><span>Основан:</span>  1971</p>
+							<p><span>Язык:</span>английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Главный кампус KAIST расположен в Тэджоне, в 160 км к югу от Сеула, столицы Кореи, 
+    где находится его Колледж бизнеса. Тэджон с населением около 1,5 миллиона человек 
+    служит центром науки и инноваций. Более 200 научно-исследовательских институтов, 
+    включая научно-исследовательские центры государственного и частного секторов, расположены 
+    в Научном городке Дэдок в Тэджоне, который называется Дэдок Иннополис.</p>
+							<p>Korea Advanced Institute of Science and Technology находится на второй строчке национального 
+    рейтинга в Южной Корее.</p>
+							<p>Университет присутствует в ТОП 100 по качеству преподавания.</p>
+							<p>Выпускники KAIST пользуются хорошей репутацией в Корее и в мире.</p>
+							<p>KAIST по праву гордится своей современной библиотекой и уникальным спортивным комплексом.</p>
+							<p>KAIST также получил международную аккредитацию в сфере бизнес-образования и 
+    размещения Секретариата AAPBS.</p>
+							<p>Выпускники имеют высокий уровень занятости, и многие из них работают в международных 
+    компаниях, таких как Samsung, LG Electronics и Hyundai.</p>
+							<p>Общепризнанно KAIST считается лучшим университетом страны для изучения инженерии, 
+     нанотехнологий, инноваций, точных наук, охраны окружающей среды, строительства 
+     и ряда других дисциплин.</p>
+							
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Колледж естественных наук</p>
+							<p>Колледж естественных наук и биоинженерии</p>
+							<p>Инженерный колледж</p>
+							<p>Колледж свободных искусств и наук конвергенции</p>
+							<p>Колледж бизнеса</p>
+							<p>Школа трансдисциплинарных исследований</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 6.0</p>
+							<p>Аттестат</p>
+							<p>Сертификат/Достижения</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное письмо</p>
+							<p>Копия загранпаспорта (студента и родителей)</p>
+							<p>Заполненная вступительная онлайн-форма</p>
+							<p>Транскрипт оценок</p>
+							<p>Студенческое резюме</p>
+							<p>	Творческое портфолио</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:140px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/KAIST_logo.svg/1200px-KAIST_logo.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://i2.wp.com/www.go-study.uz/wp-content/uploads/2020/09/20100722-KI%EB%B9%8C%EB%94%A9-%EC%99%B8%EB%B6%80_23-scaled.jpg?fit=2560%2C1700&ssl=1" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

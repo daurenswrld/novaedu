@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+<section class="university-info">
+  <div class="container"> 
+    <div class="university-info__body"> <h2>Грузия</h2> 
+      <div class="university-info__main"> 
+        <div class="university-info__main-left"><img alt="" src="https://pbs.twimg.com/profile_images/758284313972670464/waXYIPsY.jpg" />
+        </div> 
+        <div class="university-info__main-right"> 
+          <p>• Сравнительно низкие цены за обучение, недорогое проживание</p> 
+          <p>• Качественное бесплатное образование</p> 
+          <p>• Признание диплома на международном рынке</p> 
+          <p>• Виза в Грузию не нужна </p> 
+          <p>• Международная среда </p> 
+          <p>• Дальнейшее трудоустройство за рубежом</p> 
+		  <p>• Стажировка в мировых крупных компаниях</p>
+        </div> 
+      </div> 
+      <div class="university-info__buttons"> <a href="{% url 'map' %}"><i class="fas fa-reply"></i></a> <a href="#info-01">scroll down <i class="fas fa-arrow-down"></i> </a>
+      </div> 
+    </div> 
+  </div> </section><section id="info-01" class="info-01">
+  <div class="container"> 
+    <div class="about-university"> 
+      <div class="about-university-left"> 
+        <div class="about-university-top"> 
+          <div class="about-university-top-left"> 
+            <p><span>Город:</span> Тбилиси</p> 
+            <p><span>Основан:</span> 1995</p> 
+            <p><span>Язык:</span> английский</p> 
+            <p><span>Программы:</span>бакалавриат, магистратура, языковые программы</p> 
+            <p><span>Стоимость обучения в год: </span> Бакалавриат 2000EUR/год <br> Магистратура 2000EUR/год</p> 
+            <p><span>Скидка компании NovaEd (обучение)</span>50% <br> (если у абитуриента знание английского языка (уровень) не меньше B1)</p> 
+            <p><span>Доп. бонусы от универа:</span>50%/70% <br> скидка на обучение от результатов внутреннего теста университета.</p> 
+          </div> 
+          <div class="about-university-top-right"> <h3>Программы обучения: </h3> 
+            <p>Бухгалтерский учет и аудит</p> 
+            <p>Финансы</p> 
+            <p>Менеджмент</p> 
+            <p>Маркетинг</p> 
+            <p>Туризм</p> 
+            <p>Информатика</p> 
+			<p>Английская филология</p> 
+            <p>Экономика</p> 
+			<p>Международные отношения</p>
+			<p>Государственное управление</p>
+          </div> 
+        </div> 
+        <div class="about-university-bottom"> 
+          <div class="about-university-bottom-left">
+			   <h3>Требования:</h3> 
+            <p>Вступительный экзамен (2 этап)</p> 
+            <p>1. listening, grammar, reading</p> 
+			<p>2. interiew</p> 
+		    <p>Аттестат</p>
+		    <p>Личные документы</p>
+          </div> 
+        </div> 
+      </div> 
+      <div class="about-university-right">
+		  <img style="height:100px;" alt="" src="https://pbs.twimg.com/profile_images/758284313972670464/waXYIPsY.jpg" />
+		  <img alt="" src="https://i1.wp.com/stockholmcf.org/wp-content/uploads/2018/08/IBSU.jpg?resize=400%2C267&ssl=1" />
+      </div> 
+    </div> 
+  </div> 
+</section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

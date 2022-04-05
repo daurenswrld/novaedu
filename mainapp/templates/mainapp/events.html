@@ -1,0 +1,66 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+<aside class="news-filter">
+		<a href="{% url 'news' %}" class="news-filter__item "><i class="far fa-newspaper"></i>Все</a>
+<!--		<a href="{ url 'popular' }" class="news-filter__item"><i class="fas fa-fire"></i>Популярные</a>-->
+		<a href="{% url 'latest' %}" class="news-filter__item"><i class="far fa-clock"></i>Последние</a>
+		<a href="#!" class="news-filter__item selectedFilter"><i class="far fa-calendar-check"></i></i>События</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-canada"></span>Канада</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-japan"></span>Япония</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-south-korea"></span>Корея</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-switzerland"></span>Швейцаря</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-russia"></span>Россия</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-georgia"></span>Грузия</a>
+		<a href="#!" class="news-filter__item"><span class="iconify" data-inline="false" data-icon="twemoji:flag-for-flag-czechia"></span>Чехия</a>
+	</aside>
+	<div class="aside-burger">
+		<button class="btnAside">Фильтр</button>
+	</div>
+	<section class="news-list">
+		<div class="container">
+			<div class="news-list__body">
+
+			{% for e in events %}
+
+				<div class="news-item">
+					<div class="news-item__info">
+						<h2>{{e.title}} </h2>
+						{% autoescape off %}
+						<h4 style="max-height:100%">{{e.content|linebreaksbr}}</h4>	</br>
+						{% endautoescape %}
+						<p>{{e.time_add}}</p>
+					</div>
+				</div>
+			{% endfor %}
+
+			</div>
+		</div>
+	</section>
+
+    {% if page_obj.has_other_pages %}
+        <nav class="list-pages">
+            <ul>
+			{% if page_obj.has_previous %}
+			<li class="page-num">
+				<a href="?page={{ page_obj.previous_page_number }}">&lt;</a>
+			</li>
+    {% endif %}
+	 {% for p in paginator.page_range %}
+		{% if page_obj.number == p %}
+            <li class="page-num page-num-selected">{{ p }}</li>
+		{% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2  %}
+            <li class="page-num">
+                <a href="?page={{ p }}">{{ p }}</a>
+            </li>
+		{% endif %}
+     {% endfor %}
+{% if page_obj.has_next %}
+    <li class="page-num">
+        <a href="?page={{ page_obj.next_page_number }}">&gt;</a>
+    </li>
+{% endif %}
+        </ul>
+      </nav>
+{% endif %}
+{% endblock %}

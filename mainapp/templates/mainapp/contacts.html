@@ -1,0 +1,38 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+	<section class="contact">
+		<div class="container">
+			<div class="contact__title">
+				<h2>Наши контакты</h2>
+			</div>
+			<div class="contact__body">
+				<div class="contact__info">
+					<div class="contact__info-phone">
+						<h2>Телефон</h2>
+						<p>+7 775 219 43 43</p>
+					</div>
+					<div class="contact__info-email">
+						<h2>Email</h2>
+						<p>info@novaedu.kz</p>
+					</div>
+					<div class="contact__info-offices">
+						<h2>Наши офисы</h2>
+						<a href="{% url 'offices' %}">Посмотреть</a>
+					</div>
+				</div>
+				<div class="contact__logo">
+					<img src="{% static 'mainapp/img/contact logo 1.png' %}" alt="">
+				</div>
+			</div>
+			<div class="contact__links">
+				<a href="https://www.instagram.com/novaedu.kz/" target="blank"><i class="fab fa-instagram" style="font-size:30px; margin-right:7px;"></i>Instagram</a>
+				<a href="mailto:info@novaedu.kz" target="blank"><i class="fas fa-envelope" style="font-size:30px; margin-right:7px;"></i>Gmail</a>
+				<!-- <a href="#"><img src="img/contact twitter.png" alt="">Twitter</a> -->
+				<a href="https://www.facebook.com/novaedu.kz/"><i class="fab fa-facebook-f" style="font-size:30px; margin-right:7px;"></i>Facebook</a>
+				<a href="https://www.youtube.com/channel/UCnu0WSF9IBPta6mgDlzw7eQ"><i class="fab fa-youtube" style="font-size:30px; margin-right:7px;"></i>YouTube</a>
+			</div>
+		</div>
+	</section>
+<hr>
+{% endblock %}

@@ -1,0 +1,282 @@
+.zindexDown {
+  z-index: -10;
+}
+
+.map {
+  margin-top: 100px;
+}
+
+.map__title p {
+  color: #FF0000;
+  font-weight: 600;
+}
+
+.map__body {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  margin: 60px auto 0px;
+}
+
+.countries__list {
+  display: none;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #E6035D;
+  background: #FFF;
+  box-shadow: 0px 0px 2px 0px #e7025d;
+  text-align: left;
+  font-weight: 600;
+}
+.countries__list span {
+  display: inline-block;
+  margin-bottom: 1px;
+  color: #2FA4BA !important;
+  text-transform: uppercase !important;
+  font-size: 18px !important;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.countries__list a {
+  display: flex;
+  color: #E6035D;
+  text-decoration: none;
+}
+.countries__list a:hover {
+  text-decoration: underline;
+}
+
+.countries__link {
+  position: absolute;
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #E6035D;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.2s ease-in;
+  border-radius: 5px;
+}
+.countries__link:hover {
+  text-decoration: underline;
+  box-shadow: 0px 0px 15px 1px #e7025d;
+  transition: 0.5s ease-out;
+}
+.countries__link:focus {
+  box-shadow: 0px 0px 15px 1px #e7025d;
+}
+
+.north-america__link {
+  top: 100px;
+  left: 150px;
+}
+
+.europe__link {
+  top: 115px;
+  left: 450px;
+}
+
+.asia__link {
+  top: 220px;
+  left: 730px;
+}
+
+.north-america__list {
+  top: 10px;
+  left: 40px;
+}
+
+.europe__list {
+  top: -60px;
+  left: 550px;
+}
+
+.asia__list {
+  top: 260px;
+  left: 620px;
+}
+
+.map-block {
+  display: block;
+  animation: coloring;
+  animation-duration: 1s;
+}
+
+@media (max-width: 768px) {
+  .map__body img {
+    height: 390px;
+    width: 700px;
+  }
+
+  .north-america__link {
+    top: 90px;
+    left: 60px;
+  }
+
+  .europe__link {
+    top: 55px;
+    left: 430px;
+  }
+
+  .europe__list {
+    top: -90px;
+    left: 540px;
+  }
+
+  .asia__link {
+    top: 170px;
+    left: 570px;
+  }
+
+  .asia__list {
+    top: 210px;
+    left: 470px;
+  }
+}
+@media (max-width: 425px) {
+  .map__body img {
+    height: 260px;
+    width: 400px;
+  }
+
+  .countries__list p {
+    font-size: 12px;
+  }
+  .countries__list span {
+    font-size: 14px !important;
+  }
+
+  .countries__link {
+    font-size: 15px !important;
+  }
+
+  .north-america__link {
+    top: 40px;
+    left: 0px;
+  }
+
+  .north-america__list {
+    top: 75px;
+    left: 3px;
+  }
+
+  .europe__link {
+    top: 35px;
+    left: 228px;
+  }
+
+  .europe__list {
+    top: 70px;
+    left: 165px;
+  }
+
+  .asia__link {
+    top: 80px;
+    left: 300px;
+  }
+
+  .asia__list {
+    top: 115px;
+    left: 291px;
+  }
+}
+@media (max-width: 375px) {
+  .map__body {
+    margin: 30px auto 20px;
+  }
+  .map__body img {
+    height: 240px;
+    width: 355px;
+  }
+
+  .countries__list p {
+    font-size: 10px;
+  }
+  .countries__list span {
+    font-size: 12px !important;
+  }
+
+  .countries__link {
+    font-size: 13px !important;
+  }
+
+  .north-america__list {
+    top: 69px;
+    left: 0px;
+  }
+
+  .europe__list {
+    top: 65px;
+    left: 150px;
+  }
+
+  .asia__link {
+    left: 260px;
+  }
+
+  .asia__list {
+    top: 110px;
+    left: 259px;
+  }
+}
+@media (max-width: 320px) {
+  .map__body img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .countries__list p {
+    font-size: 10px;
+  }
+  .countries__list span {
+    font-size: 12px !important;
+  }
+
+  .countries__link {
+    font-size: 13px !important;
+  }
+
+  .north-america__list {
+    top: 69px;
+    left: -7px;
+  }
+
+  .europe__list {
+    top: 65px;
+    left: 130px;
+  }
+
+  .europe__link {
+    top: 30px;
+    left: 158px;
+  }
+
+  .asia__link {
+    top: 70px;
+    left: 240px;
+  }
+
+  .asia__list {
+    top: 100px;
+    left: 235px;
+  }
+}
+.map__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map__buttons a {
+  color: #E6035D;
+  transition: 0.5s ease-in;
+  font-size: 7vw;
+}
+.map__buttons a:hover {
+  text-shadow: 0px 0px 10px #E6035D;
+  transition: 0.4s ease-out;
+}
+.map__buttons p {
+  color: #FF0000;
+  font-weight: 600;
+}

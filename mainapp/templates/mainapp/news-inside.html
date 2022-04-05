@@ -1,0 +1,35 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+	{% for n in news %}
+<section class="inside-news">
+  <div class="container">
+    <div class="inside-news__body">
+		<div class="text-center">
+			<h2 class="news-name"><span class="news-01-title">{{n.title}}</span></h2>
+		</div>
+		 <div class="news01-body">
+        </div>
+        <div class="news-01_right" style="margin:0 auto;">
+	{% autoescape off %}
+		 <p>{{n.content|linebreaksbr}}</p>
+	{% endautoescape %}
+			  </div>
+      </div>
+  </div>
+	{% if n.photo %}
+		<div class="news-image" style="margin-top:15px;"><img alt="" src="{{n.photo.url}}" /></div>
+	{% endif %}
+	</section>
+	{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+

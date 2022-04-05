@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2>Швейцария</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="data:image/png;base64,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" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>•  Это пять специализированных школ в Швейцарии, 
+предлагающих престижное образование в сфере 
+туризма, кулинарии, а также управления в области
+ресторанного и гостиничного бизнеса</p>
+						<p>• Высокие рейтинги</p>
+						<p>• Академическое партнерство </p>
+						<p>• Оплачиваемые стажировки</p>
+						<p>• Карьерные перспективы</p>
+						<p>• Гарантированное трудоустройство </p>
+						<p>• Ярмарки вакансий</p>
+						<p>• Языковая практика</p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<h2 class="university-name">Cesar Ritz College</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Колледж располагает 3 кампусами в Ле Буврэ, 
+Люцерне и Бриге и специализируется на гостеприимстве, 
+туризме и предпринимательстве. Свое название колледж 
+получил в честь именитого отельера Сезара Ритца, 
+основателя всемирно известного отеля Ritz-Paris в Париже, 
+чья философия и стандарты качества легли в основу
+международного гостеприимства.</span></p>
+							<p><span>   Программы бакалавриата и магистратуры аккредитованы 
+Washington State University и University of Derby</span> </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:90px; width:160px; margin-top:40px;" src="https://swisspremium.com/wp-content/uploads/2020/06/Cezar-Ritz_Logo_POS_RGB_2020-1024x573.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<h2 class="university-name">Culinary Arts Academy</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span> Школа кулинарного искусства предлагает 
+студентам кулинарные специальности на кампусах 
+в Ле Буврэ и Люцерне. Студенты имеют возможность 
+освоить итальянскую и французскую кухню, овладеть 
+мастерством швейцарской выпечки и изготовления шоколада. 
+Студенты также получают знания по предпринимательству 
+и учатся создавать бизнес-план для развития собственного 
+дела в кулинарной индустрии</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:140px; width:240px; margin-top:15px;" src="https://studcar.ru/wp-content/uploads/2015/12/9603_culinary_arts_a.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-03">
+		<div class="container">
+			<h2 class="university-name">Hotel Institute Montreux</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Школа отельного менеджмента в г.Монтрё 
+объединяет в себе лучшие традиции швейцарского 
+отельного менеджмента и американский подход к 
+управлению бизнесом. Школа предлагает студентам 
+программы бакалавриата по бизнес-администрированию, 
+а также программы магистратуры по международному
+бизнесу с выбором специализации в сфере финансов, 
+менеджмента люксовых брендов, маркетинга и кадрового 
+управления совместно с такими компаниями как 
+Edmond de Rothschild Fund, Montreux Jazz Festival, 
+Four Seasons, Hublot</span> </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:180px; width:210px;" src="data:image/jpeg;base64,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" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-04">
+		<div class="container">
+			<h2 class="university-name">School of Hotel Management</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span> Школа отельного менеджмента и дизайна находится
+в студенческом городе Невшатель во французской 
+части Швейцарии. В программах IHTTI изучение отельного
+менеджмента сочетается с принципами брендинга и 
+дизайна отелей, что дает студентам возможность 
+приобрести креативную специальность в рамках индустрии 
+гостеприимства. Студенты IHTTI имеют свою собственную
+дизайнерскую студию, где они отрабатывают дизайнерские 
+навыки и учатся создавать атмосферу бутик-отелей</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:160px; width:240px; margin-top:15px;" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/IHTTI_Logo.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-05">
+		<div class="container">
+			<h2 class="university-name">Hotel Institute Montreux</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Школа отельного менеджмента SHMS располагает двумя
+кампусами в Ко и Лезане, которые находятся во франкоязычной 
+части Швейцарии и представляют собой величие старинных з
+амков и гранд-отелей. В рамках программы по международному
+бизнесу и гостеприимству студенты могут выбирать специализации
+в сфере управления отельным и ресторанным бизнесом, 
+управления курортно-оздоровительными комплексами и 
+организации мероприятий</span> </p>
+							<h3>Требования</h3>
+							<p><span></span>•	Паспорт</p>
+							<p><span></span>•	IELTS 5.5, TOEFL iBT 55</p>
+							<p><span></span>•	Аттестат с приложением</p>
+							<p><span></span>•	Мотивационное письмо </p>
+							<p><span></span>•	Рекомендательное письмо -2</p>
+							<p><span></span>•	CV </p>
+							<p><span></span>•	Фото</p>
+							<p><span></span>•	Заполненный документ о состоянии здоровья</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:180px; width:210px;" src="https://swisspremium.com/wp-content/uploads/2020/06/SHMS_safety_zone.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

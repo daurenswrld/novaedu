@@ -1,0 +1,486 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2>Польша</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="https://www.timeshighereducation.com/sites/default/files/styles/article785xauto/public/university-of-warsaw-crest_780.jpg?itok=kCxCOpVf" alt="">
+						<img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Warsaw_University_of_Technology.png" alt="">
+						<img src="https://sun9-55.userapi.com/impf/c637528/v637528595/4f6d5/XAZIFS8ONUI.jpg?size=604x323&quality=96&sign=9fd8e4ee235cf4304ba389f5e56052c3&type=album" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>• Рейтинг престижности</p>
+						<p>• Международно признанные дипломы</p>
+						<p>• Государство в Центральной Европе </p>
+						<p>• Безопасная и стабильная среда</p>
+						<p>• Стажировка в мировых крупных компаниях</p>
+						<p>• Дальнейшее трудоустройство за рубежом</p>
+						<p>• Более высокая денежная стоимость и доступная стоимость жизни</p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<h2 class="university-name">University of Warsaw</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 1816</p>
+							<p><span>Язык:</span> английский, Польский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Стоимость обучения:</span>2 000 - 4 000 EUR/год</p>
+							<p><span>Стоимость проживания:</span>  200 - 250 EUR/месяц</p>
+							<p><span>Стоимость питания:<br></span>100 - 150 EUR/месяц</p>
+							
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Учебное заведение входит в ТОП 300 по качеству высшего образования.</p>
+							<p>Варшавский университет считается крупным вузом, так как в нём получает 
+     образование более 41,000 учащихся.</p>
+							<p>Процент иностранных студентов в UW составляет 8% от общего числа учащихся. </p>
+							<p>В университете ведут преподавательскую деятельность более 3 тыс. учителей.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>American Studies </p>
+							<p>Archaeology</p>
+							<p>English Studies </p>
+							<p>European Politics and Economics </p>
+							<p>Finance, International Investment and Accounting </p>
+							<p>International Relations</p>
+							<p>Philosophy</p>
+							<p>Political Science</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат</p>
+							<p>Апостилирование </p>
+							<p>Копия загранпаспорта</p>
+							<p>Заполненная вступительная онлайн-форма </p>
+							<p>Портфолио</p>
+							<p>Регистрационный сбор 85 злотых</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:90px; width:150px;" src="https://www.timeshighereducation.com/sites/default/files/styles/article785xauto/public/university-of-warsaw-crest_780.jpg?itok=kCxCOpVf" alt="">
+					<img style="object-fit:cover;" src="https://s.inyourpocket.com/gallery/280138.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<h2 class="university-name">Warsaw University of Technology</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 1826</p>
+							<p><span>Язык:</span> английский, Польский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Стоимость обучения: </span> 2 000 - 4 000 EUR/год</p>
+							<p><span>Стоимость проживания:</span>200 - 250 EUR/месяц</p>
+							<p><span>Стоимость питания:  </span>100 - 150 EUR/месяц</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Самым сильным и популярным направлением считается "Инженерное дело и технологии", 
+    которое согласно международным рейтингам, входит в ТОП 210 в данной сфере. </p>
+							<p>Warsaw University of Technology, как правило, не покидает ТОП 5% в мире академических рейтингов.</p>
+							<p>Высокое качество обучения подтверждают рейтинги университета и наличие выдающихся выпускников.</p>
+							<p>Обучение проходит на 20 факультетах и более 100 специальностям.</p>
+							<p>При Варшавском политехническом университете действую международные программы 
+     по обмену студентами.</p>
+							<p>Владеет наибольшим научно-исследовательским потенциалом в сфере машиностроения  в Польше.</p>
+							<p>В Варшавском политехническом университете студенты могут заниматься своими любимыми 
+    видами спорта - плаваньем, аэробикой, футболом, баскетболом, теннисом, аэробикой 
+    в хорошо оборудованных спортивных залах.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Architecture</p>
+							<p>Automotive Mechatronics</p>
+							<p>Electric and Hybrid Vehicles Engineering</p>
+							<p>Civil Engineering</p>
+							<p>Environmental Engineering</p>
+							<p>Electrical Engineering</p>
+							<p>Computer Science 
+    (specialization: Computers Systems and Networks)</p>
+							<p>Telecommunications</p>
+							<p>Computer Science and Information Systems</p>
+							<p>Mechatronics (specialization: Photonic Engineering)</p>
+							<p>Aerospace Engineering</p>
+							<p>Power Engineering</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 6</p>
+							<p>Аттестат</p>
+							<p>Копия загранпаспорта</p>
+							<p>Заполненная вступительная онлайн-форма </p>
+							<p>Портфолио</p>
+							<p>Регистрационный сбор 200 евро</p>
+							<p>Экзамены онлайн  
+    (по английскому и по математике)</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="width:140px; height:140px;" src="https://upload.wikimedia.org/wikipedia/en/c/c9/Warsaw_University_of_Technology.png" alt="">
+					<img style="object-fit:cover;" src="https://master-emaro.ec-nantes.fr/medias/photo/wut-night-building_1574333849935-jpg?ID_FICHE=184423" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-03">
+		<div class="container">
+			<h2 class="university-name">University of economics and human science</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 2001</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура, языковые программы</p>
+							<p><span>Стоимость обучения:</span>Бакалавриат от 1900 Евро/год <br> Общежитие от 2700 Евро/год<br>Расходы на проживание 4000 Евро/год</p>
+							<p><span>Стипендии:</span>Entrance scholarships –<br> от частичного до полного покрытия расходов <br> на обучение, общежитие и расходы на проживание</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>1-й в Польше – в интернет – рейтинге университетов Польши демонстрирующих 
+     высокое качество услуг, научных исследований и преподавания.</p>
+							<p>1-й в Польше – в рейтинге перспективных ВУЗов 2014-2016 годов по преподаванию и
+     составу научных кафедр.</p>
+							<p>1-е место в рейтинге “Tygodnik Polityka” среди частных экономических ВУЗов.</p>
+							<p>Европейский диплом и современные методы обучения</p>
+							<p>Высококвалифицированные преподаватели с огромным практическим опытом</p>
+							<p>Выпускники легко адаптирующиеся на рынке труда</p>
+							<p>Современные лаборатории и аудитории</p>
+							<p>ВУЗ в европейской столице c неограниченными возможностями и перспективами</p>
+							<p>Международная атмосфера, студенческие обмены</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Psychology</p>
+							<p>Management</p>
+							<p>Finance and Accounting</p>
+							<p>Computer Science</p>
+							<p>Computer Graphics</p>
+							<p>Political Sciences</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат</p>
+							<p>Сертификат/Достижения</p>
+							<p>Копия загранпаспорта (студента и родителей)</p>
+							<p>Заполненная вступительная онлайн-форма</p>
+							<p>Творческое портфолио</p>
+							<p>Апостилирования</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:90px; width:170px;" src="https://entrant.eu/wp-content/uploads/2017/12/Logo_Akademia_pion_wersjapodst_RGB_ENG.jpg" alt="">
+					<img style="object-fit:cover;" src="http://univero.cc/public/media/university/imgs/1/aeh-widok.jpg" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-04">
+		<div class="container">
+			<h2 class="university-name">Vistula University</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 1996</p>
+							<p><span>Язык:</span> английский</p>
+							<p><span>Количество студентов:</span> 15000<p>
+							<p><span>Программы:</span> бакалавриат, магистратура, языковые программы</p>
+							<p><span>Стоимость обучения: </span> от 2 000 EUR/год</p>
+							<p><span>Стоимость проживания: </span> 200 - 250 EUR/месяц</p>
+							<p><span>Стоимость питания:  </span> 100 - 150 EUR/месяц</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Входит в ТОП 5 частных университетов Польши в 2014 году (рейтинг Перспективы 2014)</p>
+							<p>«Лучший партнер в бизнесе» среди всех университетов Польши согласно редакции Home & Market 2012</p>
+							<p>Академия Финансов и Бизнеса Vistula является наиболее интернационализированным ВУЗом Польши, 
+    в соответствии с рейтингом ВУЗов «Perspektywy» и «Dziennik Gazeta Legal" в 2014 году.</p>
+							<p>Получила медаль European Business Center Club за наилучшую программу обучения и практики 
+    для своих студентов;</p>
+							<p>Высокое качество обучения подтверждают международные организации, которые проводят  
+    аккредитацию: CEEMAN - в сфере управления, WACE - в сфере совмещения учебы с программами 
+     практик и стажировок, IAU - подтверждающая качество учебы;</p>
+							<p>Возможность участия в программах студенческого обмена Socrates и Erasmus и, получая стипендию, 
+     учиться семестр или год за границей</p>
+							<p>Подготовительная языковая школа (сертификаты TOEFL, IELTS и др.)</p>
+							<p>Академией введено инновационная программа, которая объединяет науку и бизнес – «COOP-EDU», </p>
+							<p>Высококачественные образовательные программы и академический состав.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Диететика </p>
+							<p>Экономика</p>
+							<p>Изучение английского языка</p>
+							<p>Финансы и учет</p>
+							<p>Графика</p>
+							<p>Международные отношения</p>
+							<p>Журналистика и социальная коммуникация</p>
+							<p>Менеджмент</p>
+							<p>Туризм </p>
+							<p>Архитектура </p>
+							<p>Компьютерная инженерия</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат</p>
+							<p>Сертификат/Достижения</p>
+							<p>Копия загранпаспорта (студента и родителей)</p>
+							<p>Заполненная вступительная онлайн-форма</p>
+							<p>Творческое портфолио</p>
+							<p>Апостилирования</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:100px; padding-bottom:5px;" src="https://www.vistula.edu.pl/wp-content/uploads/2019/03/afib-logo-header-en.png" alt="">
+					<img src="https://s3.eu-north-1.amazonaws.com/images.free-apply.com/uni/gallery/lg/1061600234/3eb13b8207ab4e34cb117a2ea333ab3a22a2f362.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-05">
+		<div class="container">
+			<h2 class="university-name">SWPS University</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 1996</p>
+							<p><span>Язык:</span>  английский, Польский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Стоимость обучения:</span> 2 000 - 4 000 EUR/год</p>
+							<p><span>Стоимость проживания:  </span> 200 - 250 EUR/месяц</p>
+							<p><span>Стоимость питания: </span> 100 - 150 EUR/месяц</p>
+							<p><span>Доп бонусы от компании /универа:<br></span>Грант на 1 год на обучения </p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>В рейтинге польских университетов Перспективы 2019 Университет SWPS занял второе место 
+    серди частных учебных заведений.</p>
+							<p>В Times Higher Education World University Rankings by subject SWPS занимает 
+     место 401+ в категории психология.</p>
+							<p>В нём обучаются больше четырнадцати тысяч студентов и докторантов, в том числе 
+     тысяча двести иностранных студентов из более шестидесяти стран мира.2019 году попал в 
+     ТОП 3  лучших частных университетов Польши .</p>
+							<p>Эффективное совмещение теории с практикой в процессе обучения, что способствует 
+    высоким шансам успешного трудоустройства.</p>
+							<p>Первые позиции учебного заведения в рейтингах работодателей.</p>
+							<p>Возможности для научного развития — в SWPS создано 30 различных научных кружков.</p>
+							<p>Возможность изучать иностранные языки (английский, немецкий, испанский, норвежский, шведский).</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Английский язык </p>
+							<p>Психология </p>
+							<p>Менеджмент </p>
+							<p>School of form (Design)</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Мотивоционное письмо</p>
+							<p>IELTS 6.0</p>
+							<p>Возраст от 16 до 19 лет;</p>
+							<p>Достижения и сертификаты </p>
+							<p>Заполненная вступительная онлайн-форма </p>
+							<p>Дедлайн Август 15 </p>
+							<p>Регистрационный сбор 85 злотых</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:50px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/University_of_Social_Sciences_and_Humanities.svg/1200px-University_of_Social_Sciences_and_Humanities.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://achtung.kz/wp-content/uploads/2018/11/800px-SWPS_University_in_Warsaw_05.jpg" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+		<section class="info-06">
+		<div class="container">
+			<h2 class="university-name">Lazarski University</h2>
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 1996</p>
+							<p><span>Язык:</span> английский, Польский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура</p>
+							<p><span>Стоимость обучения:</span>2 000 - 4 000 EUR/год</p>
+							<p><span>Стоимость проживания: </span> 200 - 250 EUR/месяц</p>
+							<p><span>Стоимость питания: </span> 100 - 150 EUR/месяц</p>
+							<p><span>Стипендии:</span> • Полная стипендия – покрывает обучение, общежитие и <br>
+     частичные расходы на проживание 22 000 USD/год<br>• Стипендия, с покрытием половины стоимости обучения <br> и расходы на проживание 11 000 USD<br> • Стипендия, с покрытием стоимости обучения ~ 18 000 USD<br> • Стипендия, с покрытием половины стоимости обучения ~ 9 000 USD</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>1-е место среди негосударственных учебных заведений в номинации «Наилучший факультет права» </p>
+							<p>2-е место «Наилучшая негосударственная бизнес-школа» </p>
+							<p>2019 году попал в ТОП 3  лучших частных университетов Польши </p>
+							<p>Ведущий  университет бизнеса и права Польши </p>
+							<p>Аккредитация британского Coventry University англоязычных программ, проводимых в 
+    Лазарском, позволяют студентам получить одновременно британский и польский дипломы</p>
+							<p>Аккредитация программы Legal Skills центром Center for International Legal Studies в Стратсбурге.</p>
+							<p>Международная аккредитация: www.anabin.de, которая позволяет по окончанию 
+    Лазарского университета продолжать учебу во всех государственных ВУЗах Германии и Австрии.</p>
+							<p>Вы сможете провести семестр обучения в других странах ЕС.</p>
+							<p>Известный благодаря высококвалифицированным преподавателям и практическому подходу к обучению</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Aviation Law and Professional Pilot Licence</p>
+							<p>Law in Business Management</p>
+							<p>Law in International Relations</p>
+							<p>Business Economics (double degree)</p>
+							<p>International Relations and European Studies 
+    (double degree)</p>
+							<p>Economics</p>
+							<p>International Relations</p>
+							<p>Management</p>
+							<p>Finance and Accounting</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5,5</p>
+							<p>Аттестат</p>
+							<p>Копия загранпаспорта</p>
+							<p>Заполненная вступительная онлайн-форма </p>
+							<p>Апостилирование</p>
+							<p>Регистрационный сбор 85 злотых</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:100px;" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Lazarski_University.png" alt="">
+					<img src="https://world.uz/files/160_740841el.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+		<section class="info-07">
+		<div class="container">
+			<h2 class="university-name">Collegium Civitas University</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Варшава</p>
+							<p><span>Основан:</span> 1997</p>
+							<p><span>Язык:</span> английский, Польский</p>
+							<p><span>Программы:</span> бакалавриат, магистратура, языковые программы</p>
+							<p><span>Стоимость обучения:</span>от 1 900 - 4 000 EUR/год</p>
+							<p><span>Стоимость проживания:<br></span>200 - 250 EUR/месяц</p>
+							<p><span>Стоимость питания:</span>100 - 150 EUR/месяц</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>1-й в Польше – в интернет – рейтинге университетов Польши демонстрирующих высокое 
+     качество услуг, научных исследований и преподавания.</p>
+							<p>1-й в Польше – в рейтинге перспективных ВУЗов 2014-2016 годов по преподаванию и 
+     составу научных кафедр.</p>
+							<p>1-е место в рейтинге “Tygodnik Polityka” среди частных экономических ВУЗов.</p>
+							<p>Европейский диплом и современные методы обучения</p>
+							<p>Высококвалифицированные преподаватели с огромным практическим опытом</p>
+							<p>Выпускники легко адаптирующиеся на рынке труда</p>
+							<p>Современные лаборатории и аудитории</p>
+							<p>ВУЗ в европейской столице c неограниченными возможностями и перспективами</p>
+							<p>Международная атмосфера, студенческие обмены</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Psychology</p>
+							<p>Management</p>
+							<p>Finance and Accounting</p>
+							<p>Computer Science</p>
+							<p>Computer Graphics</p>
+							<p>Political Sciences</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 5.5</p>
+							<p>Аттестат</p>
+							<p>Сертификат/Достижения</p>
+							<p>Копия загранпаспорта (студента и родителей)</p>
+							<p>Заполненная вступительная онлайн-форма</p>
+							<p>Творческое портфолио</p>
+							<p>Апостилирования </p>
+							<p>SAT Reasoning Test min 1190, <br>  SAT Subject Test (при наличии)</p>
+							<p> Сертификаты, грамоты, <br>  дипломы достижений (при наличии) </p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:50px;" src="https://sun9-55.userapi.com/impf/c637528/v637528595/4f6d5/XAZIFS8ONUI.jpg?size=604x323&quality=96&sign=9fd8e4ee235cf4304ba389f5e56052c3&type=album" alt="">
+					<img style="object-fit:cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/2017-05-28_Pa%C5%82ac_Kultury_i_Nauki_2.jpg/1200px-2017-05-28_Pa%C5%82ac_Kultury_i_Nauki_2.jpg" alt ="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

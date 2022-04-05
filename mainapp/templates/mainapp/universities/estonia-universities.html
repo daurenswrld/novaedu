@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2><img src="img/unitedkingdome-.png" alt="">Эстония</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img height="170px" src="https://play-lh.googleusercontent.com/cY5cyp-Lf_OsFoS-EfbZ7rBT6tO1UBnhuUI8G2lo8SvfYsxwI1TuRguLiMSkEylqezvr" alt="">
+						<img height="170px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Universit%C3%A4t_Tartu_Logo.svg/1200px-Universit%C3%A4t_Tartu_Logo.svg.png" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>• Рейтинг престижности</p>
+						<p>• Международно признанные дипломы</p>
+						<p>• Несколько государственных стипендий и финансовой помощи для поступающих студентов</p>
+						<p>• Более высокая денежная стоимость и доступная стоимость жизни</p>
+						<p>• Безопасная и стабильная среда</p>
+						<p>• Стажировка в мировых крупных компаниях</p>
+						<p>• Дальнейшее трудоустройство за рубежом</p>
+						<p>• Виза на полгода без нужды в спонсорстве</p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Таллин, Эстония</p>
+							<p><span>Основан:</span> 1905</p>
+							<p><span>Язык:</span> Английский</p>
+							<p><span>Количество студентов:</span> 14000</p>
+							<p><span>Программы:</span> Бакалавриат, магистратура</p>
+							<p><span>Бакалавриат</span> 3800 EUR/год</p>
+							<p><span>Магистратура</span> от 1000 EUR/год</p>
+							<p><span>Стоимость проживания: </span>150-250 EUR/месяц</p>
+							<p><span>Стоимость питания:</span>100-150 EUR/месяц</p>
+							<p>Гранты и стипендии на весь год обучения</p>
+						</div>
+						<div class="about-university-top-right" style="flex:0 1 50%;">
+							<h3>Преимущества:</h3>
+							<p>Самое крупное техническое учебное заведение Эстонии</p>
+							<p>Один из лучших университетов в Скандинавском регионе.</p>
+							<p>Учебные программы имеют государственную аккредитацию.</p>
+							<p>Входит в 500 лучших университетов мира</p>
+							<p>TUT прочно занимает вторую рейтинговую строчку национального списка лучших учебных заведений.</p>
+							<p>Престижность TUT дополняется членством в таких организациях как EUA, CESAER, EFMD
+и Baltic Management Development Association.</p>
+							<p>Студенты могут получать дополнительные знания в мощной научной библиотеке, содержащей все необходимые ресурсы</p>
+							<p>Глубокое академическое образование.</p>
+							<p>Возможность подрабатывать вовремя учебы.</p>
+							<p>На территории кампуса -сертификационный центр и Музей</p>
+							<p>Участие в международных и национальных исследовательских проектах</p>
+							<p>Легкость получения стипендии</p>
+							<p>Языковые курсы при ВУЗе</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>International Business Administrtation (BA)</p>
+							<p>Cyber Security Engineering (BSC)</p>
+							<p>Integrated Engineering (BSC)</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>IELTS 6.0</p>
+							<p>Аттестат, апостиль</p>
+							<p>Сертификат / Достижения</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное письмо - 2</p>
+							<p>CV</p>
+							<p>Онлайн тест по специальности/Интервью</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="width:70px;" src="https://play-lh.googleusercontent.com/cY5cyp-Lf_OsFoS-EfbZ7rBT6tO1UBnhuUI8G2lo8SvfYsxwI1TuRguLiMSkEylqezvr" alt="">
+					<img src="https://i.ytimg.com/vi/qwc2kgdUF3g/maxresdefault.jpg" style="object-fit:cover;" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Город:</span> Тарту, Эстония</p>
+							<p><span>Основан:</span> 1632</p>
+							<p><span>Язык:</span> английский,эстонский,русский</p>
+							<p><span>Cost:</span> 1500$</p>
+							<p><span>Количество студентов:</span>11000</p>
+							<p><span>Программы:</span> Бакалавриат, магистратура</p>
+							<p><span>Бакалавриат:</span> 3800EUR/год</p>
+							<p><span>Магистратура:</span> от 1000EUR/год</p>
+							<p><span>Стоимость проживания:</span> 150-250EUR/месяц</p>
+							<p><span>Стоимость питания:</span> 100-150EUR/месяц</p>
+							<p>Гранты и стипендии на весь год обучения</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Преимущества:</h3>
+							<p>Самый престижный ВУЗ Эстонии по исследованию TNS Emor.</p>
+							<p>Диплом признается во всем мире и востребован на рынке труда.</p>
+							<p>Студенческий кампус считается самым комфортабельным в мире.</p>
+							<p>Известный образовательный и интеллектуальный центр для академиков, ученых и студентов из всех стран использует программу ErasmusStudentNetworkTartu для каждодневной поддержки студентов из зарубежных стран.</p>
+							<p>На территории функционирует международная организация AIESEC, занимающаяся
+стажировкой и обучением работы в команде.</p>
+							<p>Позволяет учиться очно и заочно.</p>
+							<p>Предпочитает гибкую систему образования с вовлечением в курс обучения непрофилирующих предметов.</p>
+							<p>Организовывает учебный процесс на курсовой системе, дающей право выбирать порядок изучаемых дисциплин в течение обучения.</p>
+							<p>Является крупнейшим научно-образовательным учреждением.</p>
+							<p>Занимает ведущие позиции среди учебных заведений Европы.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Программы обучения:</h3>
+							<p>Business Administrtation</p>
+							<p>Science and Technology</p>
+							<p>Medicine</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Требования:</h3>
+							<p>Аттестат, апостиль</p>
+							<p>IELTS 5.5 , TOEFL 75</p>
+							<p>Вступительные экзамены или итоговые оценки по отдельным предметам, предусмотренные программой.</p>
+							<p>Сертификат / Достижения</p>
+							<p>Мотивационное письмо</p>
+							<p>Рекомендательное письмо - 2</p>
+							<p>CV</p>
+							<p>Интервью</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right" style="margin-right:10px;">
+					<img style ="height:80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Universit%C3%A4t_Tartu_Logo.svg/1200px-Universit%C3%A4t_Tartu_Logo.svg.png" alt="">
+					<img style="object-fit:cover;" src="https://u4society.eu/images/U4/basics/UT-main-building.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

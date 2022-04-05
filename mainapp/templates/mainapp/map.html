@@ -1,0 +1,54 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+	<section class="map">
+		<div class="container">
+			<div class="map__title">
+				<p>*нажмите на интересующую страну</p>
+			</div>
+			<div class="map__body">
+				<img src="{% static 'mainapp/img/world_map.png' %}" height="500" alt="">
+				<div class="north-america">
+					<a href="#!" class="north-america__link countries__link">Северная Америка</a>
+					<div class="north-america__list countries__list">
+						<span>Северная Америка:</span>
+						<a href="#!" >Канада</a>
+						<a href="#!" >США</a>
+					</div>
+				</div>
+				<div class="europe">
+					<a href="#!" class="europe__link countries__link">Европа</a>
+					<div class="europe__list countries__list">
+						<span>Европа:</span>
+						<a href="{% url 'uk' %}" >Великобритания</a>
+						<a href="{% url 'czech' %}" >Чехия</a>
+						<a href="{% url 'poland' %}" >Польша</a>
+						<a href="#!" >Латвия</a>
+						<a href="{% url 'lithuania' %}" >Литва</a>
+						<a href="#!" >Германия</a>
+						<a href="{% url 'switzerland' %}" >Швейцария</a>
+						<a href="{% url 'hungary' %}" >Венгрия</a>
+						<a href="{% url 'estonia' %}" >Эстония</a>
+						<a href="#!" >Италия</a>
+						<a href="{% url 'georgia' %}" >Грузия</a>
+					</div>
+				</div>
+				<div class="asia">
+					<a href="#!" class="asia__link countries__link">Азия</a>
+					<div class="asia__list countries__list">
+						<span>Азия:</span>
+						<a href="{% url 'china' %}" >Китай</a>
+						<a href="{% url 'south_korea' %}" >Южная Корея</a>
+						<a href="{% url 'hong_kong' %}" >Гонконг</a>
+						<a href="#!" >Малазия</a>
+						<a href="#!" >Япония</a>
+					</div>
+				</div>
+			</div>
+			<div class="map__buttons">
+				<a href="{% url 'home' %}"><i class="fas fa-reply"></i></a>
+				<p>*нажмите на интересующую страну</p>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2><img src="img/unitedkingdome-.png" alt="">Венгрия</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="https://stipendiumhungaricum.hu/includes/images/SH_logo_sziv.png" alt="">
+					</div>
+					<div class="university-info__main-right">
+						<p>• Программа стипендии SH была учреждена правительством</p>
+						<p>• Венгрии с целью содействия интернационализации венгерского<br>
+							высшего образования и привлечения лучших <br> иностранных студентов со всего мира
+						</p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<h2 class="university-name">Stipendium Hungaricum</h2>
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Количество грантов:</span> 250</p>
+							<p><span>Бакалавриат</span> 110 мест</p>
+							<p><span>Магистратура:</span> 90 мест</p>
+							<p><span>Бакалавриат+магистратура:</span> 30 мест</p>
+							<p><span>По программе докторантура:</span> 20 мест</p>
+							<p><span>Грант предусматривает покрытие следующих расходов:</span>бесплатное обучение <br> ежемесячная стипендия для программ</p>
+							<p><span>Бакалавриат и магистратура</span> 130 Евро </p>
+							<p><span>Докторантура:<br></span> 450-580 Евро </p>
+							<p><span>проживание в общежитии <br>   (или оплата арендуемого жилья в размере 130 Евро в месяц);</p>
+							<p><span>Медицинская страховка</span> </p>
+							
+						</div>
+						<div class="about-university-top-right">
+							<h3>ВНИМАНИЕ:</h3>
+							<p>Кандидату на бакалавриат должно исполниться 18 лет до 31 августа 2022 года)</p>
+							<p>Не все специальности доступны для казахстанцев</p>
+							<p>Каждый кандидат может выбрать максимум 2 программы и/или 2 университета (по приоритету)</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Требования:</h3>
+							<p>Онлайн анкета</p>
+							<p>Документы об образовании: <br> бакалавриат: -	аттестат с приложением/ табель 11 кл (GPА 4,5 из 5); аттестат за 9 кл с приложением<br> магистратура: диплом степени бакалавриата с приложением (GPА 3,0 из 4) <br> докторантура:  диплом степени магистратуры с приложением (GPА 3,0 из 4) </p>
+							<p>Мотивационное письмо</p>
+							<p>IELTS/TOEFL В2 уровень</p>
+							<p>Медицинская справка 082 (Флюорография, СПИД, Гепатиты А,В,С)</p>
+							<p>Грамоты, сертификаты, дипломы, благодарственные письма (при наличии)</p>
+							<p>Рекомендательное письмо (при наличии)</p>
+							<p>Перечень научных публикаций или учебно-методических/научных разработок, при их наличии (для докторантуры)</p>
+							<p>Документ, подтверждающий факт принадлежности к категории дети-сироты и дети, 
+    оставшиеся без попечения родителей, инвалиды с детства и дети-инвалиды, 
+    которым согласно медицинскому заключению не противопоказано обучение 
+    в соответствующих зарубежных организациях образования, дети из многодетных семей</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>УСЛОВИЯ:</h3>
+							<p>Работаем с ЦМП (Центр международных програм) по программе Stipendium Hungaricum</p>
+							<p>В рамках стипендиальной программы венгерская сторона предоставляет казахстанцам 250 грантов по следующим программам:<br> бакалавриат – 110 мест <br>  магистратура – 90 мест <br> бакалавриат и магистратура со сроком обучения от 5 до 6 лет – 30 мест <br> докторантура – 20 мест. </p>
+							<p>Грант предусматривает покрытие следующих расходов: бесплатное обучение, ежемесячная стипендия, проживание в общежитии и медицинская страховка.</p>
+							<p>Остальные расходы покрываются обладателем гранта самостоятельно.</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Конкурсный отбор состоит из двух этапов:</h3>
+							<p>1) Независимая  экспертная комиссия проводит персональное собеседование с претендентами в срок не позднее 15 рабочих дней со дня окончания приема документов;</p>
+							<p>2) по итогам собеседования и результатов подсчета баллов претендентов Итоговая комиссия утверждает основной и резервный списки претендентов на обучение в Венгрии.</p>
+							<p>После завершения академического обучения за рубежом победитель конкурса обязан вернуться в Казахстан и отработать 3 года. </p>
+							<p>Начиная с 2021 года, это является обязательным условием</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Грант предусматривает покрытие следующих расходов:</h3>
+							<p>бесплатное обучение</p>
+							<p>ежемесячная стипендия для программ бакалавриат и магистратура - 130 Евро, докторантура - 450-580 Евро</p>
+							<p>проживание в общежитии (или оплата арендуемого жилья в размере 130 Евро в месяц) </p>
+							<p>медицинская страховка</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img style="height:70px; width:160px;" src="https://stipendiumhungaricum.hu/includes/images/SH_logo_sziv.png" alt="">
+					<img style="object-fit:cover;" src="https://sm.nis.edu.kz/wp-content/uploads/1-9-800x500.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

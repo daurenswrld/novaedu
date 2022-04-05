@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+	<section class="university-info">
+		<div class="container">
+			<div class="university-info__body">
+				<h2><img src="{% static 'mainapp/img/unitedkingdome-.png' %}" alt="">United Kingdom</h2>
+				<div class="university-info__main">
+					<div class="university-info__main-left">
+						<img src="{% static 'mainapp/img/University-of-Westminster-logo.png' %}">
+						<img src="{% static 'mainapp/img/University_of_Bristol-Logo 1.png'  %}">
+						<img src="{% static 'mainapp/img/City-University-London-logo 1.png' %}">
+						<img src="{% static 'mainapp/img/a6087b60-ebe0-41de-b495-9bc03d5b064e 1.png' %}">
+					</div>
+					<div class="university-info__main-right">
+						<p>• International diploma</p>
+						<p>• The acquired knowledge will make you a <br>world-class specialist</p>
+						<p>• Great place to a trip </p>
+						<p>• International recognition </p>
+						<p>• International culture </p>
+						<p>• Four countries in ONE </p>
+					</div>
+				</div>
+				<div class="university-info__buttons">
+					<a href="{% url 'map' %}"><i class="fas fa-reply"></i></a>
+					<a href="#info-01">scroll down <i class="fas fa-arrow-down"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-01" id="info-01">
+		<div class="container">
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>City:</span> London</p>
+							<p><span>Established:</span> 1905</p>
+							<p><span>Language:</span> English</p>
+							<p><span>Cost:</span> 1500$</p>
+							<p><span>Accommodation cost:</span> 2000$</p>
+							<p><span>Bonuses from the University/Company:</span> 700-900$</p>
+							<p><span>Official site:</span> UW.com</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Advantages:</h3>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Programs:</h3>
+							<p>International Law</p>
+							<p>Engineering</p>
+							<p>Computer Science</p>
+							<p>Software Engineer</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Requirements:</h3>
+							<p>IELTS +6.5</p>
+							<p>Motivational letter</p>
+							<p>Video about his school</p>
+							<p>Middle School Certificate</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="{% static 'mainapp/img/universityofwestminster.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-02">
+		<div class="container">
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>City:</span> London</p>
+							<p><span>Established:</span> 1905</p>
+							<p><span>Language:</span> English</p>
+							<p><span>Cost:</span> 1500$</p>
+							<p><span>Accommodation cost:</span> 2000$</p>
+							<p><span>Bonuses from the University/Company:</span> 700-900$</p>
+							<p><span>Official site:</span> UW.com</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Advantages:</h3>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Programs:</h3>
+							<p>International Law</p>
+							<p>Engineering</p>
+							<p>Computer Science</p>
+							<p>Software Engineer</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Requirements:</h3>
+							<p>IELTS +6.5</p>
+							<p>Motivational letter</p>
+							<p>Video about his school</p>
+							<p>Middle School Certificate</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="{% static 'mainapp/img/pristol.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-03">
+		<div class="container">
+			<div class="about-university">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>City:</span> London</p>
+							<p><span>Established:</span> 1905</p>
+							<p><span>Language:</span> English</p>
+							<p><span>Cost:</span> 1500$</p>
+							<p><span>Accommodation cost:</span> 2000$</p>
+							<p><span>Bonuses from the University/Company:</span> 700-900$</p>
+							<p><span>Official site:</span> UW.com</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Advantages:</h3>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Programs:</h3>
+							<p>International Law</p>
+							<p>Engineering</p>
+							<p>Computer Science</p>
+							<p>Software Engineer</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Requirements:</h3>
+							<p>IELTS +6.5</p>
+							<p>Motivational letter</p>
+							<p>Video about his school</p>
+							<p>Middle School Certificate</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="{% static 'mainapp/img/london.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info-04">
+		<div class="container">
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>City:</span> London</p>
+							<p><span>Established:</span> 1905</p>
+							<p><span>Language:</span> English</p>
+							<p><span>Cost:</span> 1500$</p>
+							<p><span>Accommodation cost:</span> 2000$</p>
+							<p><span>Bonuses from the University/Company:</span> 700-900$</p>
+							<p><span>Official site:</span> UW.com</p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Advantages:</h3>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>One of the best universities in The UK.</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+							<p>In the 1st place in London</p>
+							<p>One of the biggest campus in the world</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Programs:</h3>
+							<p>International Law</p>
+							<p>Engineering</p>
+							<p>Computer Science</p>
+							<p>Software Engineer</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Requirements:</h3>
+							<p>IELTS +6.5</p>
+							<p>Motivational letter</p>
+							<p>Video about his school</p>
+							<p>Middle School Certificate</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-university-right">
+					<img src="{% static 'mainapp/img/liverpool.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

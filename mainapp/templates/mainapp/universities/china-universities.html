@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+<section class="university-info">
+  <div class="container"> 
+    <div class="university-info__body"> <h2>Китай</h2> 
+      <div class="university-info__main"> 
+        <div class="university-info__main-left">
+			<img alt="" src="https://pbs.twimg.com/profile_images/1128205573290201088/ubtJr521_400x400.png" />
+			<img style="height:100px; width:240px;" alt="" src="https://www.lifesci.dundee.ac.uk/sites/www.lifesci.dundee.ac.uk/files/styles/flex_page_image/public/logo-csc_0.jpg?itok=QhfceveE" />
+        </div> 
+        <div class="university-info__main-right"> 
+          <p>• Небольшая стоимость обучения</p> 
+          <p>• Стипендиальные программы для иностранцев с покрытием всех расходов</p> 
+          <p>• Условия проживания, комфортные общежития для иностранных студентов</p> 
+          <p>• Большие, красивые пейзажные кампусы</p> 
+          <p>• Престижность, дипломы высоко ценятся на мировом рынке труда</p> 
+          <p>• Изучение одного из 6 языков ООН - китайского</p> 
+		  <p>• Возможность подработки</p>
+		  <p>• Интернациональная среда</p>
+		  <p>• Трудоустройство выпускников</p>
+        </div> 
+      </div> 
+      <div class="university-info__buttons"> <a href="{% url 'map' %}"><i class="fas fa-reply"></i></a> <a href="#info-01">scroll down <i class="fas fa-arrow-down"></i> </a>
+      </div> 
+    </div> 
+  </div> </section><section id="info-01" class="info-01">
+  <div class="container"> 
+    <div class="about-university"> 
+      <div class="about-university-left"> 
+        <div class="about-university-top"> 
+          <div class="about-university-top-left"> 
+            <p><span>Город:</span> Шэньчжэнь</p> 
+            <p><span>Основа:</span> 2012</p> 
+            <p><span>Язык:</span> английский</p> 
+            <p><span>Программы:</span> бакалавриат</p> 
+            <p><span>Стипендии: </span> 14</p> 
+            <p><span>Number of hours:</span> ~9000-10 000USD/год</p> 
+			  <p>Полная стипендия для иностранных студентов - <br> покрывает обучение, общежитие, расходы на <br> проживание, медицинскую страховку.</p>
+			  <p><span>Сайт:</span><a href="https://www.sustech.edu.cn"> www.sustech.edu.cn/en</a></p> 
+          </div> 
+          <div class="about-university-top-right"> <h3>Преимущества: </h3> 
+            <p>Молодой, инновационный, исследовательский университет расположен в Международном
+хабе инноваций «Силиконовой долине» Китая - городе Шэньчжэнь.</p> 
+            <p>Главное отличие университета от других китайских вузов - все основные предметы преподаются на английском языке. Лекции, семинары, практические занятия, экзамены и все необходимые материалы - все на английском языке.</p> 
+            <p>Система обучения 2+2, первые два года студенты изучают общие дисциплины разного направления, последние два года изучают уже более узконаправленные курсы по выбранной специальности.</p> 
+            <p>Интегрирование гуманитарных наук и STEM предметов.</p> 
+            <p>Международная учебная программа соответствует лучшим университетам мира.</p> 
+            <p>100+ подписанных соглашений с партнер-университетами из разных стран мира.</p> 
+			  <p> 80+ программ по обмену. </p> 
+            <p>Современный, полностью оснащённый всем необходимым кампус.</p> 
+          </div> 
+        </div> 
+        <div class="about-university-bottom"> 
+          <div class="about-university-bottom-left">
+			   <h3>Программы обучения:</h3> 
+            <p>Колледж естественных наук</p> 
+			  <p>Аттестат с приложением</p>
+			  <p>Колледж инженерии</p> 
+			  <p>Школа медицины</p> 
+			  <p>Школа бизнеса</p> 
+			  <p>Школа инновации и предпринимательства</p> 
+			  <p>Школа гуманитарии и социальных наук</p> 
+			  
+          </div> 
+          <div class="about-university-bottom-right"> <h3>Требования:</h3> 
+            <p>Аттестат с приложением</p> 
+            <p>Транскрипт за 10-11 кл</p> 
+            <p>IELTS /TOEFL B2 уровень</p> 
+            <p>Мотивационное письмо</p> 
+            <p>Рекомендательные письма</p> 
+            <p>Онлайн-форма заявки</p> 
+            <p>Сертификаты, грамоты, дипломы достижений (при наличии)</p> 
+            <p>Быть академически готовым STEM обучению, <br>
+Биология, Химия, Физика и Математика первые два года</p> 
+            <p>Онлайн тест по Физике и Математике и Английскому языку</p>
+			  <p>Онлайн интервью</p>
+          </div> 
+        </div> 
+      </div> 
+      <div class="about-university-right">
+		  <img style="height:100px;" alt="" src="https://pbs.twimg.com/profile_images/1128205573290201088/ubtJr521_400x400.png" />
+		  <img alt="" src="https://www.educationcenter.cz/assets/galleries/1708/55837.jpg" />
+      </div> 
+    </div> 
+  </div> 
+</section>
+	<section class="info-02">
+		<div class="container">
+			<div class="about-university1">
+				<div class="about-university-left">
+					<div class="about-university-top">
+						<div class="about-university-top-left">
+							<p><span>Количество грантов:</span> 86 (2019г.)</p>
+							<p><span>-бакалавриат</span></p>
+							<p><span>-магистратура</span></p>
+							<p><span>-докторантура</span></p>
+						</div>
+						<div class="about-university-top-right">
+							<h3>Грант предусматривает покрытие <br>следующих расходов:</h3>
+							<p>бесплатное обучение</p>
+							<p>ежемесячная стипендия для программ: <br>
+								бакалавриат – 350$, <br>
+								магистратура – 420$, <br>
+								докторантура – 490$
+							</p>
+							<p>проживание в общежитии</p>
+							<p>медицинская страховка</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>О программе:</h3>
+							<p>В целях содействия взаимопониманию, сотрудничеству и обменам в различных областях между Китаем и другими странами, китайское правительство учредило серию стипендиальных программ для спонсирования иностранных студентов, преподавателей и ученых для обучения и проведения исследований в китайских университетах.</p>
+							<p>В настоящее время 289 китайских университетов предлагают широкий спектр академических программ в области науки, техники, сельского хозяйства, медицины, экономики, юридических исследований, менеджмента, образования, истории, литературы, философии и изобразительного искусства для стипендиатов всех уровней.</p>
+						</div>
+						<div class="about-university-bottom-right">
+							<h3>Внимание:</h3>
+							<p>Претендент на бакалавриат должен быть в возрасте до 25 лет</p>
+							<p>претендент на магистратуру должен быть в возрасте до 35 лет</p>
+							<p>претендент на докторантуру должен быть в возрасте до 40 лет</p>
+							<p>Каждый кандидат может выбрать максимум 1 специальность и 3 университета (по приоритету)</p>
+							<p>Претенденты в возрасте до 18 лет должны предоставить правовые документы об опекунстве</p>
+						</div>
+					</div>
+					<div class="about-university-bottom">
+						<div class="about-university-bottom-left">
+							<h3>Требования:</h3>
+							<p>1.Онлайн анкета</p>
+							<p>2.Документы об образовании: <br>
+бакалавриат:<br>
+-аттестат/ табель 11 кл (GPA 4,0 из 5)<br>
+магистратура:<br>
+-диплом степени бакалавриата/транскрипт (GPA 3,0 из 4)<br>
+докторантура:<br>
+-диплом степени магистратуры/ транскрипт (GPA 3,0 из 4)</p>
+							<p>3. Учебный план</p>
+							<p>4. HSK З для бакалавриата <br> HSK 4 для магистратуры и докторантуры</p>
+							<p>5. Медицинская справка 082</p>
+							<p>6. Грамоты, сертификаты, дипломы, благодарственные письма (при наличии)</p>
+							<p>7. Рекомендательное письмо (при наличии)</p>
+							<p>8. Перечень научных публикаций или учебно-методических/научных разработок, при их наличии (для докторантуры)</p>
+							<p>9. Письменное согласие родителей на выезд и обучение за рубежом (для лиц, не достигших 18 лет)</p>
+							<p>10. Документ, подтверждающий факт принадлежности к категории дети-сироты и дети, <br> оставшиеся без попечения родителей, инвалиды с детства и дети-инвалиды, которым согласно медицинскому <br>заключению не противопоказано обучение в соответствующих зарубежных организациях образования, дети из многодетных семей.
+</p>
+						</div>
+					</div>
+				</div>
+				 <div class="about-university-right" style = " margin-right:20px;" >
+		  <img style="height:100px; width:240px;" alt="" src="https://www.lifesci.dundee.ac.uk/sites/www.lifesci.dundee.ac.uk/files/styles/flex_page_image/public/logo-csc_0.jpg?itok=QhfceveE" />
+		  <img alt="" src="https://www.educationcenter.cz/assets/galleries/1708/55837.jpg" />
+			  </div> 
+			</div>
+		</div>
+	</section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>

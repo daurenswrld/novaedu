@@ -1,0 +1,78 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+		<section class="dashboard">
+		<div class="container">
+			<div class="dashboard__numbers">
+				<div class="dashboard__numbers-item">
+					<img src="{% static 'mainapp/img/countries earth.png' %}" alt="">
+					<hr>
+					<div class="dashboard__numbers-item_text">
+						<p>Страны</p>
+						<h3>19</h3>
+					</div>
+				</div>
+				<div class="dashboard__numbers-item">
+					<img src="{% static 'mainapp/img/universities.png' %}" alt="">
+					<hr>
+					<div class="dashboard__numbers-item_text">
+						<p>Университет</p>
+						<h3>40+</h3>
+					</div>
+				</div>
+				<div class="dashboard__numbers-item">
+					<img src="{% static 'mainapp/img/students dashboard.png' %}" alt="">
+					<hr>
+					<div class="dashboard__numbers-item_text">
+						<p>Участников</p>
+						<h3>32391</h3>
+					</div>
+				</div>
+				<div class="dashboard__numbers-item">
+					<img src="{% static 'mainapp/img/graduates dash.png' %}" alt="">
+					<hr>
+					<div class="dashboard__numbers-item_text">
+						<p>Выпускников</p>
+						<h3>5423</h3>
+					</div>
+				</div>
+			</div>
+			<div class="dashboard__body">
+				<div class="dashboard__info">
+					<div class="dashboard__info-title">
+						<h2>Топ Стран</h2>
+						<p>Все данные в процентах %</p>
+					</div>
+					<div class="dashboard__info-main">
+						<div class="dashboard__info-countries">
+							<p>Канада</p>
+							<p>Северная Корея</p>
+							<p>Германия</p>
+							<p>Чехия</p>
+							<p>Россия</p>
+							<p>Польша</p>
+						</div>
+						<div class="dashboard__info-diagram">
+							<div class="dashboard__info-item"></div>
+							<div class="dashboard__info-item"></div>
+							<div class="dashboard__info-item"></div>
+							<div class="dashboard__info-item"></div>
+							<div class="dashboard__info-item"></div>
+							<div class="dashboard__info-item"></div>
+							<div class="dashboard__info-item"></div>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard__graduates">
+					<div class="dashboard__graduates-title"><h2>Немного статистики</h2></div>
+					<div class="dashboard__graduates-circle"><p>Сферы интересов посетителей</p></div>
+					<div class="dashboard__graduates-info">
+						<div class="dashboard__graduates-info_item"><p>Бакалавриат<strong> 53%</strong></p></div>
+						<div class="dashboard__graduates-info_item"><p>Магистратура & аспирантура <strong>19%</strong></p></div>
+						<div class="dashboard__graduates-info_item"><p>Средние школы / колледжи <strong>15%</strong></p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

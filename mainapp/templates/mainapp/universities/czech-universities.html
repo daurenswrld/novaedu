@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/map.css' %}">
+	<link rel="stylesheet" href="{% static 'mainapp/css/news.css' %}">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{% static 'mainapp/css/universities.css' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'mainapp/img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'mainapp/img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'mainapp/img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'mainapp/img/favicon/site.webmanifest' %}">
+	<title>{{title}} Universities</title>
+</head>
+<body>
+<section class="university-info">
+  <div class="container">
+    <div class="university-info__body"> <h2>Чехия</h2> 
+      <div class="university-info__main"> 
+        <div class="university-info__main-left"><img alt="" src="{% static 'mainapp/img/Logo for website/CZU.png' %}" />
+        </div> 
+        <div class="university-info__main-right"> 
+          <p>• Бесплатное образование на Чешском языке</p> 
+          <p>• Качественное образование </p> 
+          <p>• Рейтинг престижности </p> 
+          <p>• Безопасность </p> 
+          <p>• Качественное бесплатное образование </p> 
+          <p>• Дальнейшее трудоустройство за рубежом</p> 
+		  <p>• Виза на год без нужды в спонсорстве</p>
+        </div> 
+      </div> 
+      <div class="university-info__buttons"> <a href="{% url 'map' %}"><i class="fas fa-reply"></i></a> <a href="#info-01">scroll down <i class="fas fa-arrow-down"></i> </a>
+      </div> 
+    </div> 
+  </div> </section><section id="info-01" class="info-01">
+  <div class="container"> 
+    <div class="about-university"> 
+      <div class="about-university-left"> 
+        <div class="about-university-top"> 
+          <div class="about-university-top-left"> 
+            <p><span>Город:</span> Прага</p> 
+            <p><span>Университет:</span> Czech University of Life Sciences Prague</p> 
+            <p><span>Начало обучения:</span> Сентябрь</p> 
+            <p><span>Проживание:</span> в Резиденциях</p> 
+            <p><span>Количество человек в одной группе: </span> 14</p> 
+            <p><span>Количество часов:</span>560 часов</p> 
+            <p><span>Обучение:</span>5 раз в неделю по 5 уроков в день</p> 
+            <p><span>Стоимость курса:</span> 2900 EUR</p> 
+          </div> 
+          <div class="about-university-top-right"> <h3>В стоимость курса входит: </h3> 
+            <p>Консультация при подборе учебного заведения и программы обучения;</p> 
+            <p>Оформление необходимых документов в учебное заведение;</p> 
+            <p>Регистрация в системе учебного заведения;</p> 
+            <p>Стоимость курса;</p> 
+            <p>Учебники и рабочие тетради;</p> 
+            <p>Получение письма-подтверждения о зачислении в учебное заведение;</p> 
+			  <p> Перевод на чешский язык и нотариальное заверение необходимых документов <br>
+Для получения визы, аттестата с приложением исправки со школы с указанием количества <br>
+часов всех предметов за 9,10 и 11 класс, а также апостилирование;</p> 
+            <p>Визовая поддержка;</p> 
+			<p>Помощь при нострификации аттестата в Чешской Республике;</p>
+			<p>Консультация по выбору вуза и специальности, а также дальнейшее сопровождение <br>
+процесса поступления, в т.ч подача документов в приемную комиссию</p>
+			<p>Организация проживания, бронь в общежитие.</p>
+			<p>Кураторская поддержка на время обучения.</p>
+          </div> 
+        </div> 
+        <div class="about-university-bottom"> 
+          <div class="about-university-bottom-left">
+			   <h3>Требования:</h3> 
+            <p>Паспорт</p> 
+            <p>Аттестат с приложением</p> 
+			  <p>Справку со школы с указанием количества часов всех предметов за 9, 10 и 11 класс</p> 
+          </div> 
+          <div class="about-university-bottom-right"> <h3>Важно!</h3> 
+            <p>Чтобы получить визу к началу занятий, регистрироваться на курсы нужно как минимум за 3-5 месяцев до их начала</p> 
+          </div> 
+        </div> 
+<div class="about-university-bottom"> 
+          <div class="about-university-bottom-left">
+			   <h3>Порядок и сроки оплаты:</h3> 
+            <p>Регистрационный взнос (бронирования места на языковых курсах)
+составляет 500 (пятьсот) евро
+Оплата производится до 1 декабря 2020 года.
+В случае одностороннего отказаклиента или отказе в визе
+данная сумма не возвращается.</p> 
+            <p>Основная сумма - 1400 (тысяча четыреста) евро
+Оплата производится до 1 февраля 2020 года.
+При отказе в визе данная сумма возвращается;
+в случае одностороннего отказа клиента от обучения
+возвращается 50 % от данной суммы</p> 
+			  <p>Остаток суммы 1 0ОО (девятьсот) евро
+Оплата производится до 1 апреля 2020 года
+При отказе в визе данная сумма возвращается;
+в случае одностороннего отказа клиента от обучения
+возвращается 50 % от 2400 евро</p> 
+          </div> 
+          <div class="about-university-bottom-right"> <h3>Другие расходы:</h3> 
+            <p>Оплата проживания в общежитие от 250 Евро в месяц</p> 
+            <p>депозит за общежитие-300 евро (возвращается
+в полном размере, если не было установлено никаких
+повреждений оборудования комнаты после
+окончания срока контракта)</p> 
+            <p>питание от 150 Евро в месяц</p> 
+            <p>медицинское страхование на год, оформляется в страховой
+компании Чехии-500Евро (с покрытием лечения Covid 19)</p> 
+            <p>визовый сбор - 100евро</p> 
+            <p>расходы на поездку в г.Нур-Султан для подачи документов
+на визу и получения визы в посольстве Чешской Республики</p> 
+            <p>справка с банка с балансом в размере 3 500 евро,
+предоставляется в посольство при подаче документов на визу
+(деньги можно снять со счета после получения визы)</p> 
+            <p>встреча по приезду в Чехию - 100 евро (по желанию)</p> 
+			<p>нострификация аттестата в Чехии 34 ООО тенге</p> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="about-university-right">
+		  <img alt="" src="{% static 'mainapp/img/Logo for website/CZU.png' %}" />
+		  <img alt="" src="https://www.educationcenter.cz/assets/galleries/1708/55837.jpg" />
+      </div> 
+    </div> 
+  </div> 
+</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script src="{% static 'mainapp/js/main.js' %}"></script>
+	<script src="{% static 'mainapp/js/map.js' %}"></script>
+</body>
+</html>
