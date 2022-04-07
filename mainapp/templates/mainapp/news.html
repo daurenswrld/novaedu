@@ -23,9 +23,11 @@
 			{% for n in news %}
 				<a href="{{ n.get_absolute_url }}"><div class="news-item">
 					<div class="news-item__info">
+					{% autoescape off %}
 						<h2>{{n.title}}</h2>
 						<h4>{{n.content}}</h4>
 						<p>{{n.time_add}} • {{n.time_read}}</p>
+					{% endautoescape %}
 					</div>
 				{% if n.photo %}
 					<div class="news-item__photo">

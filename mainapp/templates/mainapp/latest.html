@@ -24,9 +24,11 @@
 			{% for l in latest %}
 				<a href="{{ l.get_absolute_url }}"><div class="news-item">
 					<div class="news-item__info">
+						{% autoescape off %}
 						<h2>{{l.title}}</h2>
 						<h4>{{l.content}}</h4>
 						<p>{{l.time_add}} • {{l.time_read}}</p>
+						{% endautoescape %}
 					</div>
 					<div class="news-item__photo">
 						<img src="{{l.photo.url}}" alt="">
